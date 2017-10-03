@@ -1,8 +1,9 @@
 #pragma once
+#include <iostream>
 class String
 {
 private:
-	const char* mString;
+	char* mString;
 public:
 	String();
 	String(char* name);
@@ -48,7 +49,7 @@ public:
 	Postcondition: The string is now a constant character string.
 	Visibility: Public
 	*/
-	void UpperString();
+	String UpperString();
 	/*Prototype: void UpperString();
 	Description: Uppercases all the characters in the string.
 	Arguments: None
@@ -56,7 +57,7 @@ public:
 	Postcondition: All the casing in the string is uppercased
 	Visibility: Public
 	*/
-	void LowerString();
+	String LowerString();
 	/*Prototype: void LowerString();
 	Description: Lowercases all the characters in the string.
 	Arguments: None.
@@ -89,4 +90,5 @@ public:
 	Postcondition: The sub-string is replaced with the new sub-string.
 	Visibility: Public
 	*/
+	friend std::ostream& operator<<(std::ostream &out, char* mString);
 };

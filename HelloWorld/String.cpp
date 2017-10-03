@@ -2,7 +2,7 @@
 
 String::String()
 {
-	mString = "Default";
+	mString = "\0";
 }
 String::String(char* name)
 {
@@ -24,13 +24,11 @@ char String::AccessIndex(int index)
 }
 String String::AppendString(String rhs)
 {
-	int lengthOne = GetLength();
-	int lengthTwo = rhs.GetLength();
-	int i = lengthOne;
-	while (i < lengthOne + lengthTwo)
+	int i = GetLength();
+	while (i < GetLength() + rhs.GetLength())
 	{
-		mString[i] =
-		i++
+		mString[i] = rhs.mString[i];
+		i++;
 	}
 	return String();
 }
@@ -42,11 +40,35 @@ const char * String::ConstantString()
 {
 	return nullptr;
 }
-void String::UpperString()
+String String::UpperString()
 {
+	char *a = new char[255];
+	int i = 0;
+	while (i < GetLength())
+	{
+		if (mString[i] < 123 && mString[i] > 96)
+			a[i] = mString[i] - 32;
+		else
+			a[i] = mString[i];
+		i++;
+	}
+	a[i] = '\0';
+	return String(a);
 }
-void String::LowerString()
+String String::LowerString()
 {
+	char* a = new char[255];
+	int i = 0;
+	while (i < GetLength())
+	{
+		if (mString[i] < 91 && mString[i] > 64)
+			a[i] = mString[i] + 32;
+		else
+			a[i] = mString[i];
+		i++;
+	}
+	a[i] = '\0';
+	return String(a);
 }
 bool String::FindSubString(char *)
 {
@@ -60,3 +82,8 @@ String String::ReplaceSubString(char *, char *)
 {
 	return String();
 }
+
+//std::ostream & operator<<(std::ostream & out, char * mString)
+//{
+//	 TODO: insert return statement here
+//}
