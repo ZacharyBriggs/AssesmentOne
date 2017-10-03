@@ -34,19 +34,37 @@ String String::AppendString(String rhs)
 			a[i] = mString[i];
 			i++;
 		}
-		/*while (i < rhs.GetLength())
+		while (j < rhs.GetLength())
 		{
 			a[i] = rhs.mString[j];
 			i++;
 			j++;
-		}*/
+		}
 	}
 	a[i] = '\0';
 	return String(a);
 }
 String String::PrependString(String lhs)
 {
-	return String();
+	char *a = new char[255];
+	int i = 0;
+	int j = 0;
+	while (i < GetLength() + lhs.GetLength())
+	{
+		while (i < lhs.GetLength())
+		{
+			a[i] = lhs.mString[i];
+			i++;
+		}
+		while (j < GetLength())
+		{
+			a[i] = mString[j];
+			i++;
+			j++;
+		}
+	}
+	a[i] = '\0';
+	return String(a);
 }
 const char * String::ConstantString()
 {
