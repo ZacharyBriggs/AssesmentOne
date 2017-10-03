@@ -3,7 +3,7 @@ int main()
 {
 	String a = String("Zach");
 	String b = String("Blambo");
-	String c = String("ach");
+	String c = String("am");
 	a.GetLength();
 	a.AccessIndex(1);
 	String test = a.UpperString();
@@ -12,5 +12,6 @@ int main()
 	a.FindSubStringFromIndex(2,c);
 	String test3 = a.AppendString(b);
 	String test4 = a.PrependString(b);
+	String test5 = b.ReplaceSubString(c, a);
 	system("pause");
 }

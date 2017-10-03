@@ -2,7 +2,7 @@
 
 String::String()
 {
-	mString = "";
+	mString = new char[255];
 }
 String::String(char* name)
 {
@@ -141,7 +141,43 @@ bool String::FindSubStringFromIndex(int index, String substring)
 }
 String String::ReplaceSubString(String substring, String newSubstring)
 {
-	return String();
+	char* lhs = new char[255];
+	char* rhs = new char[255];
+	char* newString = new char[255];
+	int i = 0;
+	int j = 0;
+	bool running = true;
+	if (!FindSubString(substring))
+		return nullptr;
+	while (running == true)
+	{
+		if (mString[i] == substring.mString[0])
+			running = false;
+		else
+		{
+			newString[i] = mString[i];
+			i++;
+		}
+	}
+	// k keeps track of how long the front end is
+	int k = i;
+	while (newSubstring.mString[j] != '\0')
+	{
+		newString[i] = newSubstring.mString[j];
+		i++;
+		j++;
+	}
+	running = true;
+	k += substring.GetLength();
+	while (running == true)
+	{
+		newString[i] = mString[k];
+		i++;
+		k++;
+		if (newString[i] == '\0')
+			running = false;
+	}
+	return String(newString);
 }
 bool String::operator==(const String & other)
 {
