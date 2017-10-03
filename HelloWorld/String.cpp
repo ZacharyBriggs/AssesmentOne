@@ -147,3 +147,8 @@ bool String::operator==(const String & other)
 {
 	return (mString == other.mString);
 }
+std::istream & operator >> (std::istream & input, String mString)
+{
+	input >> mString;
+	return input;
+}

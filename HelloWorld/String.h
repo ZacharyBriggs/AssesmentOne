@@ -3,7 +3,7 @@
 class String
 {
 private:
-	char* mString;
+	const char* mString;
 public:
 	String();
 	String(char* name);
@@ -91,5 +91,5 @@ public:
 	Visibility: Public
 	*/
 	bool operator==(const String & other);
-	friend std::ostream& operator>>(std::ostream &out, char* mString);
+	friend std::istream& operator>>(std::istream & input, String mString);
 };
