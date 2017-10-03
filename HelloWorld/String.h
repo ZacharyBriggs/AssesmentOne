@@ -65,7 +65,7 @@ public:
 	Postcondition: All the casing in the string is lowercased.
 	Visibility: Public
 	*/
-	bool FindSubString(char*);
+	bool FindSubString(String substring);
 	/*Prototype: bool FindSubString(char*);
 	Description: Searches for a sub-string in a string and returns true if it finds it.
 	Arguments: A character array representing the sub-string.
@@ -73,7 +73,7 @@ public:
 	Postcondition: True is returned if the substring is in the string.
 	Visibility: Public
 	*/
-	bool FindSubStringFromIndex(int, char*);
+	bool FindSubStringFromIndex(int index, String substring);
 	/*Prototype: bool FindSubStringFromIndex(int, char*);
 	Description: Searches for a sub-string in every index after the one passed in.
 	Arguments: An int representing the index and a character array for the sub string.
@@ -81,7 +81,7 @@ public:
 	Postcondition: True is returned if the substring is found after the index.
 	Visibility: Public
 	*/
-	String ReplaceSubString(char*, char*);
+	String ReplaceSubString(String substring, String newSubstring);
 	/*Prototype: String ReplaceSubString(char*, char*);
 	Description: Replaces a sub-string with another sub-string.
 	Arguments: Two sub-strings the first is the sub-string to be replaced and the second
@@ -90,5 +90,6 @@ public:
 	Postcondition: The sub-string is replaced with the new sub-string.
 	Visibility: Public
 	*/
-	friend std::ostream& operator<<(std::ostream &out, char* mString);
+	bool operator==(const String & other);
+	friend std::ostream& operator>>(std::ostream &out, char* mString);
 };

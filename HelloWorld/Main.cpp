@@ -2,10 +2,13 @@
 int main()
 {
 	String a = String("Zach");
-	String b;
-	std::cout << a.GetLength() << std::endl;
-	std::cout << a.AccessIndex(1) << std::endl;
+	String b = String("Blambo");
+	String c = String("ach");
+	a.GetLength();
+	a.AccessIndex(1);
 	String test = a.UpperString();
 	String test2 = a.LowerString();
+	a.FindSubString(c);
+	a.FindSubStringFromIndex(2,c);
 	system("pause");
 }

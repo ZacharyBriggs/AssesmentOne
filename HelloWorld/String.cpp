@@ -2,7 +2,7 @@
 
 String::String()
 {
-	mString = "\0";
+	mString = "";
 }
 String::String(char* name)
 {
@@ -24,13 +24,25 @@ char String::AccessIndex(int index)
 }
 String String::AppendString(String rhs)
 {
-	int i = GetLength();
+	char *a = new char[255];
+	int i = 0;
+	int j = 0;
 	while (i < GetLength() + rhs.GetLength())
 	{
-		mString[i] = rhs.mString[i];
-		i++;
+		while (i < GetLength())
+		{
+			a[i] = mString[i];
+			i++;
+		}
+		/*while (i < rhs.GetLength())
+		{
+			a[i] = rhs.mString[j];
+			i++;
+			j++;
+		}*/
 	}
-	return String();
+	a[i] = '\0';
+	return String(a);
 }
 String String::PrependString(String lhs)
 {
@@ -38,7 +50,8 @@ String String::PrependString(String lhs)
 }
 const char * String::ConstantString()
 {
-	return nullptr;
+	const char* a = mString;
+	return a;
 }
 String String::UpperString()
 {
@@ -70,20 +83,49 @@ String String::LowerString()
 	a[i] = '\0';
 	return String(a);
 }
-bool String::FindSubString(char *)
+bool String::FindSubString(String substring)
 {
-	return false;
+	int j = 0;
+	int i = 0;
+		while (i < GetLength())
+		{
+			if (mString[i] == substring.mString[j])
+			{
+				i = 0;
+				j++;
+			}
+			else
+				i++;
+		}
+		if (j == substring.GetLength())
+			return true;
+		else
+			return false;
 }
-bool String::FindSubStringFromIndex(int, char *)
+bool String::FindSubStringFromIndex(int index, String substring)
 {
-	return false;
+	int j = 0;
+	int i = index;
+	while (i < GetLength())
+	{
+		if (mString[i] == substring.mString[j])
+		{
+			i = index;
+			j++;
+		}
+		else
+			i++;
+	}
+	if (j == substring.GetLength())
+		return true;
+	else
+		return false;
 }
-String String::ReplaceSubString(char *, char *)
+String String::ReplaceSubString(String substring, String newSubstring)
 {
 	return String();
 }
-
-//std::ostream & operator<<(std::ostream & out, char * mString)
-//{
-//	 TODO: insert return statement here
-//}
+bool String::operator==(const String & other)
+{
+	return (mString == other.mString);
+}
