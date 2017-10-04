@@ -179,9 +179,22 @@ String String::ReplaceSubString(String substring, String newSubstring)
 	}
 	return String(newString);
 }
-bool String::operator==(const String & other)
+bool String::operator==(String & other)
 {
-	return (mString == other.mString);
+	int i = 0;
+	int sameChar = 0;
+	while (i < GetLength())
+	{
+		if (mString[i] == other.mString[i])
+		{
+			sameChar++;
+			if (sameChar == GetLength())
+				return true;
+		}
+		else
+			return false;
+		i++;
+	}
 }
 std::istream & operator >> (std::istream & input, String mString)
 {

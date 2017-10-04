@@ -90,6 +90,6 @@ public:
 	Postcondition: The sub-string is replaced with the new sub-string.
 	Visibility: Public
 	*/
-	bool operator==(const String & other);
+	bool operator==(String & other);
 	friend std::istream& operator>>(std::istream & input, String mString);
 };
