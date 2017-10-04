@@ -203,7 +203,6 @@ std::istream & operator >> (std::istream & input, String &returnString)
 	returnString = String(newString);
 	return input;
 }
-
 std::ostream & operator<<(std::ostream & stream, const String & a)
 {
 	stream << a.mString;
