@@ -73,7 +73,7 @@ public:
 	Postcondition: True is returned if the substring is in the string.
 	Visibility: Public
 	*/
-	bool FindSubStringFromIndex(int index, String substring);
+	bool FindSubString(int index, String substring);
 	/*Prototype: bool FindSubStringFromIndex(int, char*);
 	Description: Searches for a sub-string in every index after the one passed in.
 	Arguments: An int representing the index and a character array for the sub string.

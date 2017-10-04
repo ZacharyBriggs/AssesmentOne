@@ -120,7 +120,7 @@ bool String::FindSubString(String substring)
 		else
 			return false;
 }
-bool String::FindSubStringFromIndex(int index, String substring)
+bool String::FindSubString(int index, String substring)
 {
 	int j = 0;
 	int i = index;

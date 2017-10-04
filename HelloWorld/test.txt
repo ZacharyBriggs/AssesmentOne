@@ -1,1 +1,128 @@
 Test 1: Length of String.
+Test 2: Specific Index.
+Test 3: Uppercasing an entire string.
+Test 4: Lowercasing an entire string.
+Test 5: Finding a substring.
+Test 6: Finding a substring from a specific index.
+Test 7: Appending a string.
+Test 8: Prepending a string.
+Test 9: Replacing a substring with another substring.
+Test 10: Returning string as const char*.
+Test 11: Overloading == operator.
+Test 1: Length of String.
+Test 2: Specific Index.
+Test 3: Uppercasing an entire string.
+Test 4: Lowercasing an entire string.
+Test 5: Finding a substring.
+Test 6: Finding a substring from a specific index.
+Test 7: Appending a string.
+Test 8: Prepending a string.
+Test 9: Replacing a substring with another substring.
+Test 10: Returning string as const char*.
+Test 11: Overloading == operator.
+Test 1: Length of String.
+Test 2: Specific Index.
+Test 3: Uppercasing an entire string.
+Test 4: Lowercasing an entire string.
+Test 5: Finding a substring.
+Test 6: Finding a substring from a specific index.
+Test 7: Appending a string.
+Test 8: Prepending a string.
+Test 9: Replacing a substring with another substring.
+Test 10: Returning string as const char*.
+Test 11: Overloading == operator.
+Test 1: Length of String.
+Test 1SuccessfulTest 2: Specific Index.
+Test 2SuccessfulTest 3: Uppercasing an entire string.
+Test 4: Lowercasing an entire string.
+Test 5: Finding a substring.
+Test 6: Finding a substring from a specific index.
+Test 3SuccessfulTest 7: Appending a string.
+Test 8: Prepending a string.
+Test 9: Replacing a substring with another substring.
+Test 10: Returning string as const char*.
+Test 4SuccessfulTest 11: Overloading == operator.
+Test 1: Length of String.
+Test 1Successful.
+Test 2: Specific Index.
+Test 2Successful.
+Test 3: Uppercasing an entire string.
+Test 4: Lowercasing an entire string.
+Test 5: Finding a substring.
+Test 6: Finding a substring from a specific index.
+Test 3Successful.
+Test 7: Appending a string.
+Test 8: Prepending a string.
+Test 9: Replacing a substring with another substring.
+Test 10: Returning string as const char*.
+Test 4Successful.
+Test 11: Overloading == operator.
+5/11 successful.
+Test 1: Length of String.
+Test 1 Successful.
+Test 2: Specific Index.
+Test 2 Successful.
+Test 3: Uppercasing an entire string.
+Test 4: Lowercasing an entire string.
+Test 5: Finding a substring.
+Test 6: Finding a substring from a specific index.
+Test 3 Successful.
+Test 7: Appending a string.
+Test 8: Prepending a string.
+Test 9: Replacing a substring with another substring.
+Test 10: Returning string as const char*.
+Test 4 Successful.
+Test 11: Overloading == operator.
+5/11 successful.
+Test 1: Length of String.
+Test 1 Successful.
+Test 2: Specific Index.
+Test 2 Successful.
+Test 3: Uppercasing an entire string.
+Test 4: Lowercasing an entire string.
+Test 5: Finding a substring.
+Test 3 Successful.
+Test 6: Finding a substring from a specific index.
+Test 4 Successful.
+Test 7: Appending a string.
+Test 8: Prepending a string.
+Test 9: Replacing a substring with another substring.
+Test 10: Returning string as const char*.
+Test 5 Successful.
+Test 11: Overloading == operator.
+6/11 tests successful.
+Test 1: Length of String.
+Test 1 Successful.
+Test 2: Specific Index.
+Test 2 Successful.
+Test 3: Uppercasing an entire string.
+Test 4: Lowercasing an entire string.
+Test 5: Finding a substring.
+Test 3 Successful.
+Test 6: Finding a substring from a specific index.
+Test 4 Successful.
+Test 7: Appending a string.
+Test 8: Prepending a string.
+Test 9: Replacing a substring with another substring.
+Test 10: Returning string as const char*.
+Test 5 Successful.
+Test 11: Overloading == operator.
+6/11 tests successful.
+Test 1: Length of String.
+Test 1 Successful.
+Test 2: Specific Index.
+Test 2 Successful.
+Test 3: Uppercasing an entire string.
+Test 4: Lowercasing an entire string.
+Test 5: Finding a substring.
+Test 3 Successful.
+Test 6: Finding a substring from a specific index.
+Test 4 Successful.
+Test 7: Appending a string.
+Test 8: Prepending a string.
+Test 9: Replacing a substring with another substring.
+Test 10: Returning string as const char*.
+Test 5 Successful.
+Test 11: Overloading == operator.
+Test 6 Successful.
+7/11 tests successful.
