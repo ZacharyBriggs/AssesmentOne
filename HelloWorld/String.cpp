@@ -196,8 +196,16 @@ bool String::operator==(String & other)
 		i++;
 	}
 }
-std::istream & operator >> (std::istream & input, String mString)
+std::istream & operator >> (std::istream & input, String &returnString)
 {
-	input >> mString;
+	char *newString = new char[255];
+	input >> newString;
+	returnString = String(newString);
 	return input;
+}
+
+std::ostream & operator<<(std::ostream & stream, const String & a)
+{
+	stream << a.mString;
+	return stream;
 }

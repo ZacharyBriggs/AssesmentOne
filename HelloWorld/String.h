@@ -91,5 +91,6 @@ public:
 	Visibility: Public
 	*/
 	bool operator==(String & other);
-	friend std::istream& operator>>(std::istream & input, String mString);
+	friend std::istream& operator>>(std::istream & input, String &returnString);
+	friend std::ostream& operator<<(std::ostream & stream, const String & a);
 };

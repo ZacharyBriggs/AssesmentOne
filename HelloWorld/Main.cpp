@@ -23,7 +23,7 @@ int main()
 	else
 		failedTest(&tests, &testsFailed, file);
 	file << "Test 2: Specific Index.\n";
-	if (a.AccessIndex(1) == 'a')
+	if (a.AccessIndex(0) == 'Z')
 		successfulTest(&tests, &testsPassed, file);
 	else
 		failedTest(&tests, &testsFailed, file);
@@ -73,6 +73,17 @@ int main()
 		successfulTest(&tests, &testsPassed, file);
 	else
 		failedTest(&tests, &testsFailed, file);
-	file << testsPassed << "/11 test(s) successful.\n";
+	file << "Test 12: Inputting and Outputting C-String.\n";
+	std::cout << "Input something.\n";
+	std::cin >> a;
+	std::cout << "You inputted " << a << "." << " Correct? y/n ";
+	char correct;
+	std::cin >> correct;
+	std::cout << std::endl;
+	if(correct == 'y')
+		successfulTest(&tests, &testsPassed, file);
+	else if(correct == 'n')
+		failedTest(&tests, &testsFailed, file);
+	file << testsPassed << "/12 test(s) successful.\n";
 	file << testsFailed << " test(s) failed.\n";
 }
