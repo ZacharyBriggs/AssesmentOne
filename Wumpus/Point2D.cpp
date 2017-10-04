@@ -3,8 +3,8 @@
 
 Point2D::Point2D()
 {
-	mX = 0;
-	mY = 0;
+	mX = 3;
+	mY = 3;
 }
 Point2D::Point2D(float x, float y)
 {
@@ -21,23 +21,23 @@ Point2D Point2D::operator+(const Point2D & other)
 
 Point2D Point2D::operator-(const Point2D & other)
 {
-	mX - other.mX;
-	mY - other.mY;
-	return Point2D();
+	mX -= other.mX;
+	mY -= other.mY;
+	return Point2D(mX,mY);
 }
 
 Point2D Point2D::operator*(const Point2D & other)
 {
-	mX * other.mX;
-	mY * other.mY;
-	return Point2D();
+	mX *= other.mX;
+	mY *= other.mY;
+	return Point2D(mX,mY);
 }
 
 Point2D Point2D::operator*(float other)
 {
-	mX * other;
-	mY * other;
-	return Point2D();
+	mX *= other;
+	mY *= other;
+	return Point2D(mX,mY);
 }
 
 bool Point2D::operator==(const Point2D & other)

@@ -6,5 +6,6 @@ int main()
 {
 	Point2D test;
 	Point2D test2(2, 2);
+	Point2D test3 = test * test2;
 	system("pause");
 }
