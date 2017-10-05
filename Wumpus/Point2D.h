@@ -11,6 +11,8 @@ public:
 	Point2D operator-(const Point2D & other);
 	Point2D operator*(const Point2D & other);
 	Point2D operator*(float other);
+	Point2D operator+=(const Point2D & other);
+	Point2D operator-=(const Point2D & other);
 	bool operator==(const Point2D & other);
 	float GetX();
 	float GetY();
