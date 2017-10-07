@@ -1,6 +1,17 @@
 #include "Dungeon.h"
+#include <iostream>
 void Dungeon::GenRooms()
 {
+	int iter = 0;
+	for (float i = 0; i <= mNumRows; i++)
+	{
+		for (float j = 0; j <= mNumCols; j++)
+		{
+			mRooms[iter] = Point2D(i, j);
+			std::cout << mRooms[iter] << std::endl;
+			iter++;
+		}
+	}
 }
 Dungeon::Dungeon()
 {
@@ -30,4 +41,13 @@ bool Dungeon::CheckPlayerPosition()
 }
 void Dungeon::PrintRooms()
 {
+	for (int i = 0; i <= mNumRows; i++)
+	{
+		for (int j = 0; j <= mNumCols; j++)
+		{
+			std::cout << "<" << i << "," << j << ">";
+			if (j == mNumCols)
+				std::cout << std::endl;
+		}
+	}
 }

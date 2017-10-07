@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 class Point2D
 {
 private:
@@ -14,6 +15,7 @@ public:
 	Point2D operator+=(const Point2D & other);
 	Point2D operator-=(const Point2D & other);
 	bool operator==(const Point2D & other);
+	friend std::ostream& operator<<(std::ostream&stream, const Point2D & a);
 	float GetX();
 	float GetY();
 	void PrintPoint();

@@ -56,6 +56,7 @@ bool Point2D::operator==(const Point2D & other)
 {
 	return (mX == other.mX && mY == other.mY);
 }
+
 float Point2D::GetX()
 {
 	return mX;
@@ -67,4 +68,12 @@ float Point2D::GetY()
 void Point2D::PrintPoint()
 {
 	std::cout << mX << "," << mY << std::endl;
+}
+
+std::ostream & operator<<(std::ostream & stream, const Point2D & a)
+{
+	stream << a.mX;
+	std::cout << ",";
+	stream << a.mY;
+	return stream;
 }
