@@ -91,6 +91,28 @@ public:
 	Visibility: Public
 	*/
 	bool operator==(String & other);
+	/*Prototype: bool operator==(String & other);
+	Description: Returns true/false depending on if the two strings are
+	equal/exactly the same.
+	Arguments: Two strings.
+	Precondition: Two strings.
+	Postcondition: True/False is returned.
+	Visibility: Public.
+	*/
 	friend std::istream& operator>>(std::istream & input, String &returnString);
+	/*Prototype: friend std::istream& operator>>(std::istream & input, String &returnString);
+	Description: Allows the user to insput a string.
+	Arguments: What the string is getting changed too.
+	Precondition: A string.
+	Postcondition: The string is changed to whatever the user inputted.
+	Visibility: Public.
+	*/
 	friend std::ostream& operator<<(std::ostream & stream, const String & a);
+	/*Prototype: friend std::ostream& operator<<(std::ostream & stream, const String & a);
+	Description: Outputs the string.
+	Arguments: The string to be outputted.
+	Precondition: A string.
+	Postcondition: The contents of the string is outputted.
+	Visibility: Public.
+	*/
 };

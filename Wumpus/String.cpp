@@ -105,20 +105,20 @@ bool String::FindSubString(String substring)
 {
 	int j = 0;
 	int i = 0;
-		while (i < GetLength())
+	while (i < GetLength())
+	{
+		if (mString[i] == substring.mString[j])
 		{
-			if (mString[i] == substring.mString[j])
-			{
-				i = 0;
-				j++;
-			}
-			else
-				i++;
+			i = 0;
+			j++;
 		}
-		if (j == substring.GetLength())
-			return true;
 		else
-			return false;
+			i++;
+	}
+	if (j == substring.GetLength())
+		return true;
+	else
+		return false;
 }
 bool String::FindSubString(int index, String substring)
 {
