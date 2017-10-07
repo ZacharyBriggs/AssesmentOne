@@ -40,17 +40,15 @@ Point2D Point2D::operator*(float other)
 }
 Point2D Point2D::operator+=(const Point2D & other)
 {
-	Point2D temp;
-	temp.mX = mX += other.mX;
-	temp.mY = mY += other.mY;
-	return Point2D(temp);
+	mX = mX += other.mX;
+	mY = mY += other.mY;
+	return Point2D();
 }
 Point2D Point2D::operator-=(const Point2D & other)
 {
-	Point2D temp;
-	temp.mX = mX -= other.mX;
-	temp.mY = mY -= other.mY;
-	return Point2D(temp);
+	mX = mX -= other.mX;
+	mY = mY -= other.mY;
+	return Point2D();
 }
 bool Point2D::operator==(const Point2D & other)
 {
@@ -65,11 +63,6 @@ float Point2D::GetY()
 {
 	return mY;
 }
-void Point2D::PrintPoint()
-{
-	std::cout << mX << "," << mY << std::endl;
-}
-
 std::ostream & operator<<(std::ostream & stream, const Point2D & a)
 {
 	stream << a.mX;
