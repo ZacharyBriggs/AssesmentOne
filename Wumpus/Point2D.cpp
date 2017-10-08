@@ -2,8 +2,8 @@
 #include <iostream>
 Point2D::Point2D()
 {
-	mX = 0;
-	mY = 0;
+	mX = 4;
+	mY = 2;
 }
 Point2D::Point2D(float x, float y)
 {
