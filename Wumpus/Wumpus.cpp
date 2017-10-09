@@ -1,4 +1,5 @@
 #include "Wumpus.h"
+#include "Point2D.h"
 Wumpus::Wumpus()
 {
 	mPosition = new Point2D(4, 3);
@@ -19,9 +20,9 @@ Point2D Wumpus::GetPosition()
 }
 bool Wumpus::CheckForPlayer(Player* dude)
 {
-	/*if (dude->GetPosition == *mPosition)
+	if (dude->GetPosition() == *mPosition == true)
 	{
 		return true;
-	}*/
+	}
 	return false;
 }

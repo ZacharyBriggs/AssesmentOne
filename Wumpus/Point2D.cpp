@@ -2,8 +2,8 @@
 #include <iostream>
 Point2D::Point2D()
 {
-	mX = 0;
-	mY = 0;
+	mX = 1;
+	mY = 1;
 }
 Point2D::Point2D(int x, int y)
 {
@@ -31,7 +31,7 @@ Point2D Point2D::operator*(const Point2D & other)
 	temp.mY = mY * other.mY;
 	return Point2D(temp);
 }
-Point2D Point2D::operator*(float other)
+Point2D Point2D::operator*(int other)
 {
 	Point2D temp;
 	temp.mX = mX * other;
@@ -52,13 +52,8 @@ Point2D Point2D::operator-=(const Point2D & other)
 }
 bool Point2D::operator==(const Point2D & other)
 {
-	if (mX == other.mX && mY == other.mY)
-	{
-		return true;
-	}
-	return false;
+	return (mX == other.mX && mY == other.mY);
 }
-
 int Point2D::GetX()
 {
 	return mX;

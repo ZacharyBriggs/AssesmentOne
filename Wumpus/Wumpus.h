@@ -1,6 +1,7 @@
 #pragma once
 #include "Entity.h"
 #include "Player.h"
+#include "Point2D.h"
 class Wumpus : public Entity
 {
 public:

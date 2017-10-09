@@ -35,7 +35,7 @@ public:
 	temp Point2D. Neither variable is changed.
 	Visibility: Public.
 	*/
-	Point2D operator*(float other);
+	Point2D operator*(int other);
 	/*Prototype: Point2D operator-(float other);
 	Description: Both variables in a Point2D are multiplied by one variable.
 	Precondition: One Point2D variables.
@@ -67,7 +67,7 @@ public:
 	are equal.
 	Arguments: Two Point2Ds
 	Precondition: Two Point2Ds
-	Postcondition: True or false is return depending on if the Point2Ds
+	Postcondition: True or false is returned depending on if the Point2Ds
 	are equal.
 	Visibility: Public.
 	*/
