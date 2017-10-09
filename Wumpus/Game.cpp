@@ -8,7 +8,4 @@ Game::Game()
 	Item trapTwo(5, 1);
 	Item trapThree(1, 4);
 	Item gold(2, 4);
-	WumpusLand.PrintRooms();
-	PlayerMove(Dude);
-	HazardCheck(WumpusLand, Wumpo, gold, Dude, trapOne, trapTwo, trapThree);
 }
