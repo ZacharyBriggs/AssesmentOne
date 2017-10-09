@@ -29,13 +29,15 @@ void Dungeon::GenRooms()
 }
 bool Dungeon::CheckPlayerPosition()
 {
-	for (int i = 0; i <= mNumRows; i++)
+	for (int i = 0; i <= mNumRows+1; i++)
 	{
 		for (int j = 0; j <= mNumCols; j++)
 		{
 			Point2D thing(i, j);
 			if (mPlayer->GetPosition() == thing)
 				return false;
+			else if (i == 6)
+				return true;
 		}
 	}
 }

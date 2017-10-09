@@ -21,6 +21,6 @@ int main()
 			gameRunning = false;
 		}
 	}
-	std::cout << "Game Over\n";
+	std::cout << "Game Over.\n";
 	system("pause");
 }
