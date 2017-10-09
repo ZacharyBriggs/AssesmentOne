@@ -15,6 +15,7 @@ int main()
 	Pitfall trapOne(3,3);
 	Pitfall trapTwo(5, 1);
 	Pitfall trapThree(1, 4);
+	Pitfall gold(2, 4);
 	WumpusLand.PrintRooms();
 	bool gameRunning = true;
 	while (gameRunning == true)
@@ -42,6 +43,13 @@ int main()
 		}
 		if (trapOne.IsPlayerNearby(Dude) == true || trapTwo.IsPlayerNearby(Dude) == true || trapThree.IsPlayerNearby(Dude) == true)
 			std::cout << "You feel a breeze nearby...\n";
+		if (gold.CheckForPlayer(Dude) == true)
+		{
+			std::cout << "You found the gold!\n";
+			gameRunning = false;
+		}
+		if (gold.IsPlayerNearby(Dude) == true)
+			std::cout << "You see a faint shimmering...\n";
 	}
 	std::cout << "Game Over.\n";
 	system("pause");
