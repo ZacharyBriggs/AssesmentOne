@@ -8,9 +8,6 @@
 #include <fstream>
 int main()
 {
-	Point2D* testOne = new Point2D(1, 1);
-	Point2D* testTwo = new Point2D(1,1);
-	*testOne == *testTwo;
 	Player* Dude = new Player();
 	Wumpus* Wumpo = new Wumpus();
 	Dungeon WumpusLand(Dude, 5, 5);
@@ -32,6 +29,8 @@ int main()
 			std::cout << "The Wumpus found you!\n";
 			gameRunning = false;
 		}
+		if (Wumpo->IsPlayerNearby(Dude) == true)
+			std::cout << "You smell a foul stench...\n";
 	}
 	std::cout << "Game Over.\n";
 	system("pause");

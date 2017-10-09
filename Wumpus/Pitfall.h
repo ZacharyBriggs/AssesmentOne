@@ -1,12 +1,9 @@
 #pragma once
-#include "Entity.h"
-#include "Player.h"
-#include "Point2D.h"
-class Wumpus : public Entity
+#include "Wumpus.h"
+class Pitfall : public Wumpus
 {
-public:
-	Wumpus();
-	void Move(char direction);
+	Pitfall();
+	Pitfall(Point2D* pos);
 	void SetPosition(Point2D* pos);
 	Point2D GetPosition();
 	bool CheckForPlayer(Player* dude);

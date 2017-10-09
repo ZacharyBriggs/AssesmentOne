@@ -36,6 +36,9 @@
     <ClCompile Include="Wumpus.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Pitfall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Point2D.h">
@@ -54,6 +57,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Wumpus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pitfall.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
