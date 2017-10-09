@@ -8,6 +8,9 @@
 #include <fstream>
 int main()
 {
+	Point2D* testOne = new Point2D();
+	Point2D* testTwo = new Point2D();
+	testOne == testTwo;
 	Player* Dude = new Player();
 	Wumpus* Wumpo = new Wumpus();
 	Dungeon WumpusLand(Dude, 5, 5);
@@ -24,6 +27,11 @@ int main()
 			std::cout << "You stepped in the poison swamp!\n";
 			gameRunning = false;
 		}
+		/*if (Wumpo->CheckForPlayer(Dude) == true)
+		{
+			std::cout << "The Wumpus found you!";
+			gameRunning = false;
+		}*/
 	}
 	std::cout << "Game Over.\n";
 	system("pause");

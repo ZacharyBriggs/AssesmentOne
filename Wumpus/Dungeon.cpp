@@ -17,9 +17,9 @@ Dungeon::Dungeon(Player * player, int rows, int cols)
 void Dungeon::GenRooms()
 {
 	int iter = 0;
-	for (float i = 0; i <= mNumRows; i++)
+	for (int i = 0; i <= mNumRows; i++)
 	{
-		for (float j = 0; j <= mNumCols; j++)
+		for (int j = 0; j <= mNumCols; j++)
 		{
 			mRooms[iter] = Point2D(i, j);
 			std::cout << mRooms[iter] << std::endl;
@@ -36,10 +36,9 @@ bool Dungeon::CheckPlayerPosition()
 			Point2D thing(i, j);
 			if (mPlayer->GetPosition() == thing)
 				return true;
-			else if (i == 6)
-				return false;
 		}
 	}
+	return false;
 }
 void Dungeon::PrintRooms()
 {

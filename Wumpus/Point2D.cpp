@@ -52,7 +52,11 @@ Point2D Point2D::operator-=(const Point2D & other)
 }
 bool Point2D::operator==(const Point2D & other)
 {
-	return (mX == other.mX && mY == other.mY);
+	if (mX == other.mX && mY == other.mY)
+	{
+		return true;
+	}
+	return false;
 }
 
 int Point2D::GetX()
