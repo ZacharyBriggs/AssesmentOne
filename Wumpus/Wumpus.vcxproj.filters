@@ -36,7 +36,10 @@
     <ClCompile Include="Wumpus.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Pitfall.cpp">
+    <ClCompile Include="Item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -59,7 +62,10 @@
     <ClInclude Include="Wumpus.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Pitfall.h">
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

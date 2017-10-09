@@ -1,20 +1,20 @@
-#include "Pitfall.h"
-Pitfall::Pitfall()
+#include "Item.h"
+Item::Item()
 {
 	mPosition = new Point2D(4, 4);
 	mHealth = 1;
 	mName = "Pit";
 }
-Pitfall::Pitfall(int posOne,int posTwo)
+Item::Item(int posOne,int posTwo)
 {
 	Point2D* pos = new Point2D(posOne, posTwo);
 	Entity::SetPosition(pos);
 }
-Point2D Pitfall::GetPosition()
+Point2D Item::GetPosition()
 {
 	return *mPosition;
 }
-bool Pitfall::CheckForPlayer(Player * dude)
+bool Item::CheckForPlayer(Player * dude)
 {
 	if (dude->GetPosition() == *mPosition == true)
 	{
@@ -22,7 +22,7 @@ bool Pitfall::CheckForPlayer(Player * dude)
 	}
 	return false;
 }
-bool Pitfall::IsPlayerNearby(Player * dude)
+bool Item::IsPlayerNearby(Player * dude)
 {
 	for (int i = -1; i < 2; i += 2)
 	{

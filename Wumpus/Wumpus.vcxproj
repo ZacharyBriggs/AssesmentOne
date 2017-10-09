@@ -112,9 +112,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Dungeon.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Entity.cpp" />
-    <ClCompile Include="Pitfall.cpp" />
+    <ClCompile Include="Item.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Point2D.cpp" />
     <ClCompile Include="String.cpp" />
@@ -123,7 +124,8 @@
   <ItemGroup>
     <ClInclude Include="Dungeon.h" />
     <ClInclude Include="Entity.h" />
-    <ClInclude Include="Pitfall.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Item.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Point2D.h" />
     <ClInclude Include="String.h" />

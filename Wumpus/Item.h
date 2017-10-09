@@ -1,10 +1,10 @@
 #pragma once
 #include "Wumpus.h"
-class Pitfall : public Wumpus
+class Item : public Wumpus
 {
 public:
-	Pitfall();
-	Pitfall(int posOne,int PosTwo);
+	Item();
+	Item(int posOne,int PosTwo);
 	Point2D GetPosition();
 	bool CheckForPlayer(Player* dude);
 	bool IsPlayerNearby(Player* dude);
