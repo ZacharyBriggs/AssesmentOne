@@ -33,5 +33,4 @@ public:
 	Postcondition: mPosition is returned.
 	Visibility: Public.
 	*/
-	
 };

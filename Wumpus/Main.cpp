@@ -4,6 +4,7 @@
 #include "Entity.h"
 #include "Player.h"
 #include "Wumpus.h"
+#include "Pitfall.h"
 #include <iostream>
 #include <fstream>
 int main()
@@ -11,6 +12,9 @@ int main()
 	Player* Dude = new Player();
 	Wumpus* Wumpo = new Wumpus();
 	Dungeon WumpusLand(Dude, 5, 5);
+	Pitfall trapOne(3,3);
+	Pitfall trapTwo(5, 1);
+	Pitfall trapThree(1, 4);
 	WumpusLand.PrintRooms();
 	bool gameRunning = true;
 	while (gameRunning == true)
@@ -31,6 +35,13 @@ int main()
 		}
 		if (Wumpo->IsPlayerNearby(Dude) == true)
 			std::cout << "You smell a foul stench...\n";
+		if (trapOne.CheckForPlayer(Dude) == true || trapTwo.CheckForPlayer(Dude) == true || trapThree.CheckForPlayer(Dude) == true)
+		{
+			std::cout << "You fell into a pit!\n";
+			gameRunning = false;
+		}
+		if (trapOne.IsPlayerNearby(Dude) == true || trapTwo.IsPlayerNearby(Dude) == true || trapThree.IsPlayerNearby(Dude) == true)
+			std::cout << "You feel a breeze nearby...\n";
 	}
 	std::cout << "Game Over.\n";
 	system("pause");

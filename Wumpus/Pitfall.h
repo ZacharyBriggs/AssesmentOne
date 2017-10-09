@@ -2,9 +2,9 @@
 #include "Wumpus.h"
 class Pitfall : public Wumpus
 {
+public:
 	Pitfall();
-	Pitfall(Point2D* pos);
-	void SetPosition(Point2D* pos);
+	Pitfall(int posOne,int PosTwo);
 	Point2D GetPosition();
 	bool CheckForPlayer(Player* dude);
 	bool IsPlayerNearby(Player* dude);

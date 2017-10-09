@@ -1,5 +1,4 @@
 #include "Entity.h"
-
 Entity::Entity()
 {
 	mPosition = new Point2D();
@@ -13,13 +12,13 @@ Entity::Entity(char * name)
 void Entity::Move(char direction)
 {
 	if (direction == 'w')
-		*mPosition += *new Point2D(0, 1);
-	if (direction == 's')
-		*mPosition += *new Point2D(0,- 1);
-	if (direction == 'a')
 		*mPosition += *new Point2D(-1, 0);
+	if (direction == 's')
+		*mPosition += *new Point2D(1,0);
+	if (direction == 'a')
+		*mPosition += *new Point2D(0, -1);
 	if (direction == 'd')
-		*mPosition += *new Point2D(1, 0);
+		*mPosition += *new Point2D(0, 1);
 }
 void Entity::SetPosition(Point2D* pos)
 {

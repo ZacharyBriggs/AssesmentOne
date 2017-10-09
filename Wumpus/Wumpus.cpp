@@ -2,7 +2,7 @@
 #include "Point2D.h"
 Wumpus::Wumpus()
 {
-	mPosition = new Point2D(4, 4);
+	mPosition = new Point2D(2, 1);
 	mHealth = 1000000;
 	mName = "The Wumpus";
 }
