@@ -3,11 +3,11 @@
 class Point2D
 {
 private:
-	float mX;
-	float mY;
+	int mX;
+	int mY;
 public:
 	Point2D();
-	Point2D(float x, float y);
+	Point2D(int x, int y);
 	Point2D operator+(const Point2D & other);
 	/*Prototype: Point2D operator+(const Point2D & other);
 	Description: Adds two Point2D variables and returns the value.
@@ -79,7 +79,7 @@ public:
 	Postcondition: mX and mY of a Point2D are outputted to the console.
 	Visibility: Public.
 	*/
-	float GetX();
+	int GetX();
 	/*Prototype: float GetX();
 	Description: Returns mX of a Point2D.
 	Arguments: A Point2D.
@@ -87,7 +87,7 @@ public:
 	Postcondition: mX of the Point2D is returned.
 	Visibility: Public.
 	*/
-	float GetY();
+	int GetY();
 	/*Prototype: float GetY();
 	Description: Returns mY of a Point2D.
 	Arguments: A Point2D.

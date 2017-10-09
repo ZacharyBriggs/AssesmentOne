@@ -1,10 +1,10 @@
 #pragma once
 #include "Entity.h"
-class Player : public Entity
+class Wumpus : public Entity
 {
 public:
-	Player();
-	void Move(char direction);
+	Wumpus();
+	void Move();
 	void SetPosition(Point2D* pos);
 	Point2D GetPosition();
 };

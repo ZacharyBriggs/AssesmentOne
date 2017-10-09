@@ -35,9 +35,9 @@ bool Dungeon::CheckPlayerPosition()
 		{
 			Point2D thing(i, j);
 			if (mPlayer->GetPosition() == thing)
-				return false;
-			else if (i == 6)
 				return true;
+			else if (i == 6)
+				return false;
 		}
 	}
 }

@@ -2,10 +2,10 @@
 #include <iostream>
 Point2D::Point2D()
 {
-	mX = 4;
-	mY = 2;
+	mX = 0;
+	mY = 0;
 }
-Point2D::Point2D(float x, float y)
+Point2D::Point2D(int x, int y)
 {
 	mX = x;
 	mY = y;
@@ -55,11 +55,11 @@ bool Point2D::operator==(const Point2D & other)
 	return (mX == other.mX && mY == other.mY);
 }
 
-float Point2D::GetX()
+int Point2D::GetX()
 {
 	return mX;
 }
-float Point2D::GetY()
+int Point2D::GetY()
 {
 	return mY;
 }
