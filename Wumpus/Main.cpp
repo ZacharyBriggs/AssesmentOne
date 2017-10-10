@@ -1,13 +1,10 @@
 #include "Game.h"
 int main()
 {
-	bool gameRunning = true;
 	Game* newGame = new Game();
-	while (gameRunning == true)
+	while (newGame->HazardCheck())
 	{
 		newGame->PlayerMove();
-		if (newGame->HazardCheck() == false)
-			gameRunning = false;
 	}
 	std::cout << "Game Over.\n";
 }

@@ -4,9 +4,7 @@ Player::Player()
 {
 	mPosition = new Point2D(4,2);
 }
-Player::~Player()
-{
-}
+
 void Player::Move(char direction)
 {
 	if (direction == 'w')

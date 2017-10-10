@@ -1,13 +1,10 @@
 #include "Point2D.h"
-#include <iostream>
 Point2D::Point2D()
 {
 	mX = 1;
 	mY = 1;
 }
-Point2D::~Point2D()
-{
-}
+
 Point2D::Point2D(int x, int y)
 {
 	mX = x;

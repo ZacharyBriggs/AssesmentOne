@@ -11,14 +11,7 @@ Game::Game()
 	mGold = new Item(new Point2D(2, 4));
 	mDungeon->PrintRooms();
 }
-//Game::~Game()
-//{
-//	delete mPlayer;
-//	delete mWumpus;
-//	delete mDungeon;
-//	delete[] mTraps;
-//	delete mGold;
-//}
+
 void Game::PlayerMove()
 {
 	char direction;
@@ -28,7 +21,7 @@ void Game::PlayerMove()
 }
 bool Game::HazardCheck()
 {
-	if (mDungeon->CheckPlayerPosition() == false)
+	if (mDungeon->CheckPlayerPosition(mPlayer) == false)
 	{
 		std::cout << "You stepped in the poison swamp!\n";
 		return false;
@@ -48,7 +41,9 @@ bool Game::HazardCheck()
 		return false;
 	}
 	if (mTraps[0].IsPlayerNearby(mPlayer))
+	{
 		std::cout << "You feel a breeze nearby...\n";
+	}
 	if (mGold->CheckForPlayer(mPlayer) == true)
 	{
 		std::cout << "You found the gold!\n";

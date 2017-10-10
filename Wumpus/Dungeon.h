@@ -4,7 +4,6 @@ class Dungeon
 {
 private:
 	Point2D* mRooms;
-	Player* mPlayer;
 	int mNumCols;
 	int mNumRows;
 	void GenRooms();
@@ -17,9 +16,8 @@ private:
 	*/
 public:
 	Dungeon();
-	~Dungeon();
 	Dungeon(Player* player, int rows, int cols);
-	bool CheckPlayerPosition();
+	bool CheckPlayerPosition(Player *player);
 	/*Prototype: bool CheckPlayerPosition();
 	Description: Checks a players position and returns true if the player
 	is outside the dungeon limitations otherwise it returns false.
