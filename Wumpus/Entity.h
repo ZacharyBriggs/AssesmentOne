@@ -4,19 +4,8 @@ class Entity
 {
 protected:
 	Point2D* mPosition;
-	int mHealth;
-	char* mName;
 public:
 	Entity();
-	Entity(char* name);
-	void Move(char direction);
-	/*Prototype: void Move(char direction);
-	Description: Allows a player to move in 4 directions.
-	Arguments: The direction the player wishes to move
-	Precondition: None.
-	Postcondition: The player's position is changed by 1 depending on which direction they chose.
-	Visibility: Public.
-	*/
 	void SetPosition(Point2D* pos);
 	/*Prototype: void SetPosition(Point2D* pos);
 	Description: Sets the player's position to a chosen position.

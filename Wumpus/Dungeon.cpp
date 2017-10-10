@@ -41,7 +41,7 @@ bool Dungeon::CheckPlayerPosition()
 void Dungeon::PrintRooms()
 {
 	GenRooms();
-	for (int i = 0; i <= mNumRows; i++)
+	/*for (int i = 0; i <= mNumRows; i++)
 	{
 		for (int j = 0; j <= mNumCols; j++)
 		{
@@ -49,5 +49,5 @@ void Dungeon::PrintRooms()
 			if (j == mNumCols)
 				std::cout << std::endl;
 		}
-	}
+	}*/
 }

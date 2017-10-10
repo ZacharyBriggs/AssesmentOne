@@ -1,10 +1,11 @@
 #pragma once
-#include "Wumpus.h"
-class Item : public Wumpus
+#include "Entity.h"
+#include "Player.h"
+class Item : public Entity
 {
 public:
 	Item();
-	Item(int posOne,int PosTwo);
+	Item(Point2D *pos);
 	Point2D GetPosition();
 	bool CheckForPlayer(Player* dude);
 	bool IsPlayerNearby(Player* dude);

@@ -2,13 +2,10 @@
 Item::Item()
 {
 	mPosition = new Point2D(4, 4);
-	mHealth = 1;
-	mName = "Pit";
 }
-Item::Item(int posOne,int posTwo)
+Item::Item(Point2D *pos)
 {
-	Point2D* pos = new Point2D(posOne, posTwo);
-	Entity::SetPosition(pos);
+	 mPosition = pos;
 }
 Point2D Item::GetPosition()
 {
@@ -16,7 +13,7 @@ Point2D Item::GetPosition()
 }
 bool Item::CheckForPlayer(Player * dude)
 {
-	if (dude->GetPosition() == *mPosition == true)
+	if (dude->GetPosition() == *mPosition)
 	{
 		return true;
 	}
@@ -26,17 +23,13 @@ bool Item::IsPlayerNearby(Player * dude)
 {
 	for (int i = -1; i < 2; i += 2)
 	{
-		if ((GetPosition() + Point2D(0, i) == dude->GetPosition()))
-		{
+		if ((GetPosition() + Point2D(0, i)) == dude->GetPosition())
 			return true;
-		}
 	}
 	for (int j = -1; j < 2; j += 2)
 	{
-		if ((GetPosition() + Point2D(j, 0) == dude->GetPosition()))
-		{
+		if ((GetPosition() + Point2D(j, 0)) == dude->GetPosition())
 			return true;
-		}
 	}
 	return false;
 }

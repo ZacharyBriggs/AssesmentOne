@@ -3,15 +3,20 @@
 Player::Player()
 {
 	mPosition = new Point2D(4,2);
-	int mHealth = 100;
-	char* mName("Player");
 }
 Player::~Player()
 {
 }
 void Player::Move(char direction)
 {
-	Entity::Move(direction);
+	if (direction == 'w')
+		*mPosition += *new Point2D(-1, 0);
+	if (direction == 's')
+		*mPosition += *new Point2D(1, 0);
+	if (direction == 'a')
+		*mPosition += *new Point2D(0, -1);
+	if (direction == 'd')
+		*mPosition += *new Point2D(0, 1);
 }
 void Player::SetPosition(Point2D * pos)
 {

@@ -3,12 +3,17 @@
 Wumpus::Wumpus()
 {
 	mPosition = new Point2D(2, 1);
-	mHealth = 1000000;
-	mName = "The Wumpus";
 }
 void Wumpus::Move(char direction)
 {
-	Entity::Move(direction);
+	if (direction == 'w')
+		*mPosition += *new Point2D(-1, 0);
+	if (direction == 's')
+		*mPosition += *new Point2D(1, 0);
+	if (direction == 'a')
+		*mPosition += *new Point2D(0, -1);
+	if (direction == 'd')
+		*mPosition += *new Point2D(0, 1);
 }
 void Wumpus::SetPosition(Point2D * pos)
 {
@@ -20,7 +25,7 @@ Point2D Wumpus::GetPosition()
 }
 bool Wumpus::CheckForPlayer(Player* dude)
 {
-	if (dude->GetPosition() == *mPosition == true)
+	if (dude->GetPosition() == *mPosition)
 	{
 		return true;
 	}
@@ -30,14 +35,14 @@ bool Wumpus::IsPlayerNearby(Player* dude)
 {
 	for (int i = -1; i < 2; i+=2)
 	{
-		if ((GetPosition() + Point2D(0, i) == dude->GetPosition()))
+		if (((GetPosition() + Point2D(0, i)) == dude->GetPosition()))
 		{
 			return true;
 		}
 	}
 	for (int j = -1; j < 2; j += 2)
 	{
-		if ((GetPosition() + Point2D(j, 0) == dude->GetPosition()))
+		if (((GetPosition() + Point2D(j, 0)) == dude->GetPosition()))
 		{
 			return true;
 		}

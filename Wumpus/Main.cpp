@@ -9,6 +9,7 @@ int main()
 		if (newGame->HazardCheck() == false)
 			gameRunning = false;
 	}
+	delete newGame;
 	std::cout << "Game Over.\n";
 	system("pause");
 }

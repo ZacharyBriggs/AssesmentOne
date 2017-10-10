@@ -5,8 +5,10 @@ Game::Game()
 	mWumpus = new Wumpus();
 	mDungeon = new Dungeon(mPlayer, 5, 5);
 	mTraps = new Item[3];
-	mTraps[0]
-	mGold = new Item(2, 4);
+	mTraps[0] = Item(new Point2D(1,4));
+	mTraps[1] = Item(new Point2D(3,3));
+	mTraps[2] = Item(new Point2D(5,1));
+	mGold = new Item(new Point2D(2, 4));
 	mDungeon->PrintRooms();
 }
 Game::~Game()
@@ -15,6 +17,7 @@ Game::~Game()
 	delete mWumpus;
 	delete mDungeon;
 	delete[] mTraps;
+	delete mGold;
 }
 void Game::PlayerMove()
 {
@@ -39,12 +42,12 @@ bool Game::HazardCheck()
 	{
 		std::cout << "You smell a foul stench...\n";
 	}
-	if (mTraps[0].CheckForPlayer(mPlayer) == true || mTraps[1].CheckForPlayer(mPlayer) == true || mTraps[2].CheckForPlayer(mPlayer) == true)
+	if (mTraps[0].CheckForPlayer(mPlayer))
 	{
 		std::cout << "You fell into a pit!\n";
 		return false;
 	}
-	if (mTraps[0].IsPlayerNearby(mPlayer) == true || mTraps[1].IsPlayerNearby(mPlayer) == true || mTraps[2].IsPlayerNearby(mPlayer) == true)
+	if (mTraps[0].IsPlayerNearby(mPlayer))
 		std::cout << "You feel a breeze nearby...\n";
 	if (mGold->CheckForPlayer(mPlayer) == true)
 	{
@@ -52,9 +55,7 @@ bool Game::HazardCheck()
 		return false;
 	}
 	if (mGold->IsPlayerNearby(mPlayer) == true)
-	{
 		std::cout << "You see a faint shimmering...\n";
-	}
 	return true;
 }
 bool Game::PlayAgain()
