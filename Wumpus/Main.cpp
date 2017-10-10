@@ -6,5 +6,7 @@ int main()
 	{
 		newGame->PlayerMove();
 	}
+
 	std::cout << "Game Over.\n";
+	return 0;
 }

@@ -15,4 +15,5 @@ public:
 	void PlayerMove();
 	bool HazardCheck();
 	bool PlayAgain();
+	~Game();
 };

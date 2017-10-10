@@ -6,6 +6,7 @@ private:
 	const char* mString;
 public:
 	String();
+	~String();
 	String(char* name);
 	int GetLength();
 	/*Prototype: int GetLength();

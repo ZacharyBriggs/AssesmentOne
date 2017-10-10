@@ -6,11 +6,15 @@ Dungeon::Dungeon()
 	mNumRows = 5;
 }
 
-Dungeon::Dungeon(Player * player, int rows, int cols)
+Dungeon::Dungeon(int rows, int cols)
 {
 	mRooms = new Point2D[rows * cols];
 	mNumCols = cols;
 	mNumRows = rows;
+}
+Dungeon::~Dungeon()
+{
+	delete mRooms;
 }
 void Dungeon::GenRooms()
 {

@@ -6,6 +6,7 @@ Wumpus::Wumpus()
 }
 Wumpus::~Wumpus()
 {
+	delete mPosition;
 }
 void Wumpus::Move(char direction)
 {

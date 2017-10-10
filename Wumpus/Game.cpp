@@ -3,13 +3,21 @@ Game::Game()
 {
 	mPlayer = new Player();
 	mWumpus = new Wumpus();
-	mDungeon = new Dungeon(mPlayer, 5, 5);
+	mDungeon = new Dungeon(5, 5);
 	mTraps = new Item[3];
 	mTraps[0] = Item(new Point2D(1,4));
 	mTraps[1] = Item(new Point2D(3,3));
 	mTraps[2] = Item(new Point2D(5,1));
 	mGold = new Item(new Point2D(2, 4));
 	mDungeon->PrintRooms();
+}
+Game::~Game()
+{
+	delete mPlayer;
+	delete mWumpus;
+	delete mDungeon;
+	delete mTraps;
+	delete mGold;
 }
 
 void Game::PlayerMove()

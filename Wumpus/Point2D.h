@@ -7,6 +7,7 @@ private:
 	int mY;
 public:
 	Point2D();
+	~Point2D();
 	Point2D(int x, int y);
 	Point2D operator+(const Point2D & other);
 	/*Prototype: Point2D operator+(const Point2D & other);

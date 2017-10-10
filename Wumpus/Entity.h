@@ -6,6 +6,7 @@ protected:
 	Point2D* mPosition;
 public:
 	Entity();
+	~Entity();
 	void SetPosition(Point2D* pos);
 	/*Prototype: void SetPosition(Point2D* pos);
 	Description: Sets the player's position to a chosen position.

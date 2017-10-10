@@ -4,9 +4,15 @@ String::String()
 {
 	mString = new char[255];
 }
+
+String::~String()
+{
+	//delete mString;
+}
 String::String(char* name)
 {
-	mString = name;
+	//mString = new char[255];
+
 }
 int String::GetLength()
 {

@@ -16,7 +16,7 @@ private:
 	*/
 public:
 	Dungeon();
-	Dungeon(Player* player, int rows, int cols);
+	Dungeon(int rows, int cols);
 	bool CheckPlayerPosition(Player *player);
 	/*Prototype: bool CheckPlayerPosition();
 	Description: Checks a players position and returns true if the player
@@ -34,4 +34,6 @@ public:
 	Postcondition: Each room is printed.
 	Visibility: Public.
 	*/
+	~Dungeon();
+
 };
