@@ -4,6 +4,7 @@ class Player : public Entity
 {
 public:
 	Player();
+	~Player();
 	void Move(char direction);
 	void SetPosition(Point2D* pos);
 	Point2D GetPosition();

@@ -7,9 +7,6 @@ private:
 	Player* mPlayer;
 	int mNumCols;
 	int mNumRows;
-public:
-	Dungeon();
-	Dungeon(Player* player, int rows, int cols);
 	void GenRooms();
 	/*Prototype: void GenRooms();
 	Description: Generates the rooms of a dungeon.
@@ -18,6 +15,9 @@ public:
 	Postcondition: A new dungeon is generated.
 	Visibility: Public.
 	*/
+public:
+	Dungeon();
+	Dungeon(Player* player, int rows, int cols);
 	bool CheckPlayerPosition();
 	/*Prototype: bool CheckPlayerPosition();
 	Description: Checks a players position and returns true if the player

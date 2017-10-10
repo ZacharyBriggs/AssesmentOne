@@ -6,6 +6,9 @@ Player::Player()
 	int mHealth = 100;
 	char* mName("Player");
 }
+Player::~Player()
+{
+}
 void Player::Move(char direction)
 {
 	Entity::Move(direction);
