@@ -4,6 +4,9 @@ Wumpus::Wumpus()
 {
 	mPosition = new Point2D(2, 1);
 }
+Wumpus::~Wumpus()
+{
+}
 void Wumpus::Move(char direction)
 {
 	if (direction == 'w')

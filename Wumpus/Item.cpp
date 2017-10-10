@@ -3,6 +3,9 @@ Item::Item()
 {
 	mPosition = new Point2D(4, 4);
 }
+Item::~Item()
+{
+}
 Item::Item(Point2D *pos)
 {
 	 mPosition = pos;

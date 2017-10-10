@@ -12,7 +12,7 @@ private:
 	Item *mGold;
 public:
 	Game();
-	~Game();
+	//~Game();
 	void PlayerMove();
 	bool HazardCheck();
 	bool PlayAgain();

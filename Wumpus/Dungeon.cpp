@@ -6,6 +6,9 @@ Dungeon::Dungeon()
 	mNumCols = 5;
 	mNumRows = 5;
 }
+Dungeon::~Dungeon()
+{
+}
 Dungeon::Dungeon(Player * player, int rows, int cols)
 {
 	mRooms = new Point2D[rows * cols];

@@ -5,6 +5,7 @@ class Wumpus : public Entity
 {
 public:
 	Wumpus();
+	~Wumpus();
 	void Move(char direction);
 	void SetPosition(Point2D* pos);
 	Point2D GetPosition();

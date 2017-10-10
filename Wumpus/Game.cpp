@@ -11,14 +11,14 @@ Game::Game()
 	mGold = new Item(new Point2D(2, 4));
 	mDungeon->PrintRooms();
 }
-Game::~Game()
-{
-	delete mPlayer;
-	delete mWumpus;
-	delete mDungeon;
-	delete[] mTraps;
-	delete mGold;
-}
+//Game::~Game()
+//{
+//	delete mPlayer;
+//	delete mWumpus;
+//	delete mDungeon;
+//	delete[] mTraps;
+//	delete mGold;
+//}
 void Game::PlayerMove()
 {
 	char direction;
