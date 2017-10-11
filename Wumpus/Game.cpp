@@ -11,15 +11,6 @@ Game::Game()
 	mGold = new Item(new Point2D(2, 4));
 	mDungeon->PrintRooms();
 }
-Game::~Game()
-{
-	delete mPlayer;
-	delete mWumpus;
-	delete mDungeon;
-	delete mTraps;
-	delete mGold;
-}
-
 void Game::PlayerMove()
 {
 	char direction;
@@ -43,12 +34,12 @@ bool Game::HazardCheck()
 	{
 		std::cout << "You smell a foul stench...\n";
 	}
-	if (mTraps[0].CheckForPlayer(mPlayer))
+	if (mTraps[0].CheckForPlayer(mPlayer) || mTraps[1].CheckForPlayer(mPlayer) || mTraps[2].CheckForPlayer(mPlayer))
 	{
 		std::cout << "You fell into a pit!\n";
 		return false;
 	}
-	if (mTraps[0].IsPlayerNearby(mPlayer))
+	if (mTraps[0].IsPlayerNearby(mPlayer) || mTraps[1].IsPlayerNearby(mPlayer) || mTraps[2].IsPlayerNearby(mPlayer))
 	{
 		std::cout << "You feel a breeze nearby...\n";
 	}

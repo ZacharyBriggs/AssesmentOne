@@ -4,11 +4,6 @@ String::String()
 {
 	mString = new char[255];
 }
-
-String::~String()
-{
-	//delete mString;
-}
 String::String(char* name)
 {
 	//mString = new char[255];
@@ -202,13 +197,13 @@ bool String::operator==(String & other)
 		i++;
 	}
 }
-//std::istream & operator >> (std::istream & input, String &returnString)
-//{
-//	char *newString = new char[255];
-//	input >> newString;
-//	returnString = String(newString);
-//	return input;
-//}
+std::istream & operator >> (std::istream & input, String &returnString)
+{
+	char *newString = new char[255];
+	input >> newString;
+	returnString = String(newString);
+	return input;
+}
 //std::ostream & operator<<(std::ostream & stream, const String & a)
 //{
 //	stream << a.mString;

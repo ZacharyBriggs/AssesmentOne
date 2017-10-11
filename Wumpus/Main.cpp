@@ -8,5 +8,5 @@ int main()
 	}
 
 	std::cout << "Game Over.\n";
-	return 0;
+	system("pause");
 }

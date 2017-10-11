@@ -3,10 +3,6 @@ Item::Item()
 {
 	mPosition = new Point2D(4, 4);
 }
-Item::~Item()
-{
-	delete mPosition;
-}
 Item::Item(Point2D *pos)
 {
 	 mPosition = pos;

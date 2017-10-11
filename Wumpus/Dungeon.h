@@ -34,6 +34,4 @@ public:
 	Postcondition: Each room is printed.
 	Visibility: Public.
 	*/
-	~Dungeon();
-
 };
