@@ -1,5 +1,4 @@
 #include "Player.h"
-
 Player::Player()
 {
 	mPosition = new Point2D(4,2);
