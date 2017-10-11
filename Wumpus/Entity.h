@@ -12,7 +12,7 @@ public:
 	Arguments: A Point2D representing the new position.
 	Precondition: None.
 	Postcondition: The players mPosition is changed to the position passed in.
-	Visibility: Public.
+	Protection: Public.
 	*/
 	Point2D GetPosition();
 	/*Prototype: Point2D GetPosition();
@@ -20,6 +20,6 @@ public:
 	Arguments: None.
 	Precondition: None.
 	Postcondition: mPosition is returned.
-	Visibility: Public.
+	Protection: Public.
 	*/
 };

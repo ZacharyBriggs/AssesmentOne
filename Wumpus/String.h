@@ -99,7 +99,7 @@ public:
 	Postcondition: True/False is returned.
 	Visibility: Public.
 	*/
-	//friend std::istream& operator>>(std::istream & input, String &returnString);
+	friend std::istream& operator>>(std::istream & input, String &returnString);
 	/*Prototype: friend std::istream& operator>>(std::istream & input, String &returnString);
 	Description: Allows the user to insput a string.
 	Arguments: What the string is getting changed too.
@@ -107,7 +107,7 @@ public:
 	Postcondition: The string is changed to whatever the user inputted.
 	Visibility: Public.
 	*/
-	//friend std::ostream& operator<<(std::ostream & stream, const String & a);
+	friend std::ostream& operator<<(std::ostream & stream, const String & a);
 	/*Prototype: friend std::ostream& operator<<(std::ostream & stream, const String & a);
 	Description: Outputs the string.
 	Arguments: The string to be outputted.

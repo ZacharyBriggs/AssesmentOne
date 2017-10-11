@@ -4,17 +4,6 @@ Wumpus::Wumpus()
 {
 	mPosition = new Point2D(2, 1);
 }
-void Wumpus::Move(char direction)
-{
-	if (direction == 'w')
-		*mPosition += *new Point2D(-1, 0);
-	if (direction == 's')
-		*mPosition += *new Point2D(1, 0);
-	if (direction == 'a')
-		*mPosition += *new Point2D(0, -1);
-	if (direction == 'd')
-		*mPosition += *new Point2D(0, 1);
-}
 void Wumpus::SetPosition(Point2D * pos)
 {
 	Entity::SetPosition(pos);
