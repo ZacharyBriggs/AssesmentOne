@@ -1,5 +1,4 @@
 #include "String.h"
-
 String::String()
 {
 	mString = new char[255];

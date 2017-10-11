@@ -1,6 +1,5 @@
 #include "String.h"
 #include "Testing.h"
-
 int main()
 {
 	std::fstream file;
