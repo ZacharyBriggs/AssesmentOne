@@ -8,7 +8,22 @@ private:
 	int mNumRows;
 public:
 	Dungeon();
+	/*Prototype: Dungeon Dungeon();
+	Description: Initilizes a dungeon with default mRooms,mNumCols, and mNumRows.
+	Arguments: None.
+	Precondition: None.
+	Postcondition: A dungeon with default values is created.
+	Protection: Public.
+	*/
 	Dungeon(int rows, int cols);
+	/*Prototype: Dungeon Dungeon(int rows, int cols);
+	Description: Initilizes a dungeon with default mRooms, but mNumCols and mNumrows
+	are initilized with the values passed in.
+	Arguments: None.
+	Precondition: None.
+	Postcondition: A dungeon with custom mNumRows and mNumCols is created.
+	Protection: Public.
+	*/
 	bool CheckPlayerPosition(Player *player);
 	/*Prototype: bool CheckPlayerPosition();
 	Description: Checks a players position and returns true if the player

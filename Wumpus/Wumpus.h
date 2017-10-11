@@ -4,6 +4,13 @@ class Wumpus : public Entity
 {
 public:
 	Wumpus();
+	/*Prototype: Wumpus Wumpus();
+	Description: A Wumpus with default mPosition is opened.
+	Arguments: None.
+	Precondition: None.
+	Postcondition: A default Wumpus is created.
+	Protection: Public.
+	*/
 	void SetPosition(Point2D* pos);
 	/*Prototype: void SetPosition(Point2D* pos);
 	Description: Changes the Wumpus' mPosition to the value passed in.

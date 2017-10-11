@@ -4,6 +4,13 @@ class Player : public Entity
 {
 public:
 	Player();
+	/*Prototype: Player Player();
+	Description: Creates a Player with a default mPosition.
+	Arguments: None.
+	Precondition: None.
+	Postcondition: A player with a default mPosition is created.
+	Protection: Public.
+	*/
 	void Move(char direction);
 	/*Prototype: void Move(char direction);
 	Description: Takes user's input and changes the Player's mPosition depending on the

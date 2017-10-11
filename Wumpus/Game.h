@@ -12,6 +12,14 @@ private:
 	Item *mGold;
 public:
 	Game();
+	/*Prototype: Game Game();
+	Description: Creates a Game with default mPlayer, mWumpus, mDungeon, mTraps, and
+	mGold.
+	Arguments: None.
+	Precondition: None.
+	Postcondition: A default Game is created.
+	Protection: Public.
+	*/
 	void PlayerMove();
 	/*Prototype: void PlayerMove();
 	Description: Asks the player for input and then calls the Player's Move function

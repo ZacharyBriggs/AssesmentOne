@@ -6,7 +6,21 @@ private:
 	char* mString;
 public:
 	String();
+	/*Prototype: String String();
+	Description: A String with a default mString is created.
+	Arguments: None.
+	Precondition: None.
+	Postcondition: A default String is created.
+	Protection: Public.
+	*/
 	String(char* name);
+	/*Prototype: Dungeon Dungeon();
+	Description: A String with a custom mString is created.
+	Arguments: None.
+	Precondition: None.
+	Postcondition: A custom String is created.
+	Protection: Public.
+	*/
 	int GetLength();
 	/*Prototype: int GetLength();
 	Description: Returns length of a string.

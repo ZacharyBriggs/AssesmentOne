@@ -4,7 +4,21 @@ class Item : public Entity
 {
 public:
 	Item();
+	/*Prototype: Item Item();
+	Description: An item with a default mPosition is created.
+	Arguments: None.
+	Precondition: None.
+	Postcondition: A default Item is created.
+	Protection: Public.
+	*/
 	Item(Point2D *pos);
+	/*Prototype: Dungeon Dungeon();
+	Description: An Item with a custom mPosition is created.
+	Arguments: None.
+	Precondition: None.
+	Postcondition: A custom Item is created.
+	Protection: Public.
+	*/
 	Point2D GetPosition();
 	/*Prototype: Point2D GetPosition();
 	Description: Returns the Item's mPosition.
