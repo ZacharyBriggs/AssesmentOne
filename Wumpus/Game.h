@@ -53,7 +53,7 @@ public:
 	Arguments: None.
 	Precondition: The player completes the game and the player is asked if they wish to
 	play agian.
-	Postcondition: The game is restarted or the application exits.
+	Postcondition: True/False is returned.
 	Protection: Public.
 	*/
 };

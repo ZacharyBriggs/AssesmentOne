@@ -30,7 +30,7 @@ public:
 	*/
 	bool CheckForPlayer(Player* dude);
 	/*Prototype: bool CheckForPlayer(Player* dude);
-	Description: Checks to see if the player is occupying the same position as the Wumpus.
+	Description: Checks to see if the player is occupying the same position as this entity.
 	Arguments: The player.
 	Precondition: None.
 	Postcondition: Returns true if the player is occupying the same space. Returns false

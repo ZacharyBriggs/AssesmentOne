@@ -27,8 +27,9 @@ public:
 	*/
 	bool CheckPlayerPosition(Player *player);
 	/*Prototype: bool CheckPlayerPosition();
-	Description: Checks a players position and returns true if the player
-	is outside the dungeon limitations otherwise it returns false.
+	Description: Checks each individual position inside of a dungeon and if they player
+	isn't at any of the positions, false is returned.If the player is found then true is
+	returned.
 	Arguments: None.
 	Precondition: None.
 	Postcondition: True/False is returned.

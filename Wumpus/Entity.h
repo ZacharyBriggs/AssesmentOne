@@ -16,7 +16,7 @@ public:
 	~Entity();
 	void SetPosition(Point2D* pos);
 	/*Prototype: void SetPosition(Point2D* pos);
-	Description: Sets the player's position to a chosen position.
+	Description: Sets the player's mPosition to a a Point2D passed in.
 	Arguments: A Point2D representing the new position.
 	Precondition: None.
 	Postcondition: The players mPosition is changed to the position passed in.

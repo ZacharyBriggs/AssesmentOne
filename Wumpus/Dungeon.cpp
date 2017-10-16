@@ -28,11 +28,11 @@ void Dungeon::GenRooms()
 }
 bool Dungeon::CheckPlayerPosition(Player *player)
 {
-	for (int i = 0; i < mNumRows; i++)
+	for (int x = 0; x < mNumRows; x++)
 	{
-		for (int j = 0; j < mNumCols; j++)
+		for (int y = 0; y < mNumCols; y++)
 		{
-			Point2D dungeonSpace(i, j);
+			Point2D dungeonSpace(x, y);
 			if (player->GetPosition() == dungeonSpace)
 				return true;
 		}
