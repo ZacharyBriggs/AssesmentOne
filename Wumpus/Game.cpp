@@ -7,7 +7,7 @@ Game::Game()
 	mTraps = new Item[3];
 	mTraps[0] = Item(new Point2D(1,4));
 	mTraps[1] = Item(new Point2D(3,3));
-	mTraps[2] = Item(new Point2D(5,1));
+	mTraps[2] = Item(new Point2D(4,0));
 	mGold = new Item(new Point2D(2, 4));
 	mDungeon->GenRooms();
 }
@@ -40,7 +40,7 @@ bool Game::HazardCheck()
 	bool event = false;
 	if (mDungeon->CheckPlayerPosition(mPlayer) == false)
 	{
-		std::cout << "You stepped in the poison swamp!\nGame Over...\n";
+		std::cout << "You stepped in the poison swamp! You feel the flesh melt from your bones until\nyou become a pile of mush. Your finals moments are spent wondering how you got\nthrough the poison swamp on your way here... Game Over...\n";
 		return false;
 	}
 	if (mWumpus->CheckForPlayer(mPlayer) == true)
@@ -50,7 +50,8 @@ bool Game::HazardCheck()
 	}
 	if (mTraps[0].CheckForPlayer(mPlayer) || mTraps[1].CheckForPlayer(mPlayer) || mTraps[2].CheckForPlayer(mPlayer))
 	{
-		std::cout << "You fell into a pit!\nGame Over...\n";
+		std::cout << "You fell into a pit! Due to your now broken bones you are unable to climb out\nof the pit. ";
+		std::cout << "All you can do know is wait for the Wumpus to show up or starve\nto death... Game Over...\n";
 		return false;
 	}
 	if (mGold->CheckForPlayer(mPlayer) == true)
