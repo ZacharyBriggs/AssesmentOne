@@ -25,27 +25,14 @@ void Dungeon::GenRooms()
 }
 bool Dungeon::CheckPlayerPosition(Player *player)
 {
-	for (int i = 0; i <= mNumRows+1; i++)
+	for (int i = 0; i < mNumRows+1; i++)
 	{
-		for (int j = 0; j <= mNumCols; j++)
+		for (int j = 0; j < mNumCols; j++)
 		{
-			Point2D thing(i, j);
-			if (player->GetPosition() == thing)
+			Point2D dungeonSpace(i, j);
+			if (player->GetPosition() == dungeonSpace)
 				return true;
 		}
 	}
 	return false;
-}
-void Dungeon::PrintRooms()
-{
-	GenRooms();
-	for (int i = 0; i <= mNumRows; i++)
-	{
-		for (int j = 0; j <= mNumCols; j++)
-		{
-			std::cout << "<" << i << "," << j << ">";
-			if (j == mNumCols)
-				std::cout << std::endl;
-		}
-	}
 }

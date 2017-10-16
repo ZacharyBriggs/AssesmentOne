@@ -20,6 +20,14 @@ public:
 	Postcondition: A default Game is created.
 	Protection: Public.
 	*/
+	void TitleScreen();
+	/*Prototype: void TitleScreen();
+	Description: Outputs controls and context to the console.
+	Arguments: None.
+	Precondition: None.
+	Postcondition: 
+	Protection: Public.
+	*/
 	void PlayerMove();
 	/*Prototype: void PlayerMove();
 	Description: Asks the player for input and then calls the Player's Move function

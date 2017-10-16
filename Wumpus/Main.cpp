@@ -1,12 +1,14 @@
 #include "Game.h"
+#include <stdlib.h>
 int main()
 {
 	Game* newGame = new Game();
+	newGame->TitleScreen();
 	while (newGame->HazardCheck())
 	{
 		newGame->PlayerMove();
+		system("pause");
+		system("CLS");
 	}
-
-	std::cout << "Game Over.\n";
 	system("pause");
 }

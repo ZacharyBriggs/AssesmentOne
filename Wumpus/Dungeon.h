@@ -33,14 +33,6 @@ public:
 	Postcondition: True/False is returned.
 	Protection: Public.
 	*/
-	void PrintRooms();
-	/*Prototype: void PrintRooms();
-	Description: Prints out each individual room in a dungeon.
-	Arguments: None.
-	Precondition: None.
-	Postcondition: Each room is printed.
-	Protection: Public.
-	*/
 	void GenRooms();
 	/*Prototype: void GenRooms();
 	Description: Generates the rooms of a dungeon.
