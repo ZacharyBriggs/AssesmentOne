@@ -5,10 +5,10 @@ int main()
 	Game* newGame = new Game();
 	bool gameRunning = true;
 	newGame->TitleScreen();
-	while (gameRunning == true)
+	while (gameRunning)
 	{
 		newGame->PlayerMove();
-		if (newGame->HazardCheck() != true)
+		if (!newGame->HazardCheck())
 		{
 			if (newGame->PlayAgain())
 			{

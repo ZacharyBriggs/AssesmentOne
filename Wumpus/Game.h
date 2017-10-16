@@ -18,8 +18,7 @@ public:
 	Arguments: None.
 	Precondition: None.
 	Postcondition: A default Game is created.
-	Protection: Public.
-	*/
+	Protection: Public.*/
 	~Game();
 	void TitleScreen();
 	/*Prototype: void TitleScreen();
@@ -27,16 +26,14 @@ public:
 	Arguments: None.
 	Precondition: None.
 	Postcondition: The title and controls are displayed in the console.
-	Protection: Public.
-	*/
+	Protection: Public.*/
 	void PlayerMove();
 	/*Prototype: void PlayerMove();
 	Description: Asks the player for input and then calls the Player's Move function
 	Arguments: None.
 	Precondition: The player is at a position.
 	Postcondition: The player's position is changed depending on their input
-	Protection: Public
-	*/
+	Protection: Public*/
 	bool HazardCheck();
 	/*Prototype: bool HazardCheck();
 	Description: Checks if the player is on top of or nearby the Wumpus,gold, or a trap.
@@ -44,8 +41,7 @@ public:
 	Precondition: The player is on or near Wumpus,gold, or a trap.
 	Postcondition: Text is outputted if the player is nearby an object or the game ends if
 	they're on top of it.
-	Protection: Public.
-	*/
+	Protection: Public.*/
 	bool PlayAgain();
 	/*Prototype: bool PlayAgain();
 	Description: Asks the player if they want to play again after the game has finished.
@@ -54,6 +50,5 @@ public:
 	Precondition: The player completes the game and the player is asked if they wish to
 	play agian.
 	Postcondition: True/False is returned.
-	Protection: Public.
-	*/
+	Protection: Public.*/
 };

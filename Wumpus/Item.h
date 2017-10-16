@@ -9,8 +9,7 @@ public:
 	Arguments: None.
 	Precondition: None.
 	Postcondition: A default Item is created.
-	Protection: Public.
-	*/
+	Protection: Public.*/
 	~Item();
 	Item(Point2D *pos);
 	/*Prototype: Dungeon Dungeon();
@@ -18,16 +17,14 @@ public:
 	Arguments: None.
 	Precondition: None.
 	Postcondition: A custom Item is created.
-	Protection: Public.
-	*/
+	Protection: Public.*/
 	Point2D GetPosition();
 	/*Prototype: Point2D GetPosition();
 	Description: Returns the Item's mPosition.
 	Arguments: None.
 	Precondition: None
 	Postcondition: Item's mPosition is returned.
-	Protection: Public
-	*/
+	Protection: Public*/
 	bool CheckForPlayer(Entity* dude);
 	/*Prototype: bool CheckForPlayer(Entity* dude);
 	Description: Checks to see an Entity is occupying the same position as the Item.

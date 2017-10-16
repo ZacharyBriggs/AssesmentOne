@@ -9,8 +9,7 @@ public:
 	Arguments: None.
 	Precondition: None.
 	Postcondition: A default Wumpus is created.
-	Protection: Public.
-	*/
+	Protection: Public.*/
 	~Wumpus();
 	void SetPosition(Point2D* pos);
 	/*Prototype: void SetPosition(Point2D* pos);
@@ -18,16 +17,14 @@ public:
 	Arguments: A Point2D representing the new mPosition.
 	Precondition: None
 	Postcondition: Wumpus' mPosition is changed to the value passed in.
-	Protection: Public
-	*/
+	Protection: Public*/
 	Point2D GetPosition();
 	/*Prototype: Point2D GetPosition();
 	Description: Returns the Wumpus' mPosition.
 	Arguments: None.
 	Precondition: None
 	Postcondition: The Wumpus' mPosition is returned.
-	Protection: Public
-	*/
+	Protection: Public.*/
 	bool CheckForPlayer(Player* dude);
 	/*Prototype: bool CheckForPlayer(Player* dude);
 	Description: Checks to see if the player is occupying the same position as this entity.
@@ -35,8 +32,7 @@ public:
 	Precondition: None.
 	Postcondition: Returns true if the player is occupying the same space. Returns false
 	if they aren't.
-	Protection: Public
-	*/
+	Protection: Public.*/
 	bool IsPlayerNearby(Player* dude);
 	/*Prototype: bool IsPlayerNearby(Player* dude);
 	Description: Checks to see if the player is in an adjacent position.
@@ -44,6 +40,5 @@ public:
 	Precondition: None
 	Postcondition: Returns true if the player is occupying an adjacent position. Returns
 	false if they aren't.
-	Protection: Public
-	*/
+	Protection: Public.*/
 };

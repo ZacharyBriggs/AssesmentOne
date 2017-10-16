@@ -13,8 +13,7 @@ public:
 	Arguments: None.
 	Precondition: None.
 	Postcondition: A dungeon with default values is created.
-	Protection: Public.
-	*/
+	Protection: Public.*/
 	~Dungeon();
 	Dungeon(int rows, int cols);
 	/*Prototype: Dungeon Dungeon(int rows, int cols);
@@ -23,8 +22,7 @@ public:
 	Arguments: None.
 	Precondition: None.
 	Postcondition: A dungeon with custom mNumRows and mNumCols is created.
-	Protection: Public.
-	*/
+	Protection: Public.*/
 	bool CheckPlayerPosition(Player *player);
 	/*Prototype: bool CheckPlayerPosition();
 	Description: Checks each individual position inside of a dungeon and if they player
@@ -33,14 +31,12 @@ public:
 	Arguments: None.
 	Precondition: None.
 	Postcondition: True/False is returned.
-	Protection: Public.
-	*/
+	Protection: Public.*/
 	void GenRooms();
 	/*Prototype: void GenRooms();
 	Description: Generates the rooms of a dungeon.
 	Arguments: None.
 	Precondition: None.
 	Postcondition: A new dungeon is generated.
-	Protection: Public.
-	*/
+	Protection: Public.*/
 };

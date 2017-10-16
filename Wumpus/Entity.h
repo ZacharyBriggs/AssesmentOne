@@ -11,8 +11,7 @@ public:
 	Arguments: None.
 	Precondition: None.
 	Postcondition: An default Entity is created.
-	Protection: Public.
-	*/
+	Protection: Public.*/
 	~Entity();
 	void SetPosition(Point2D* pos);
 	/*Prototype: void SetPosition(Point2D* pos);
@@ -20,14 +19,12 @@ public:
 	Arguments: A Point2D representing the new position.
 	Precondition: None.
 	Postcondition: The players mPosition is changed to the position passed in.
-	Protection: Public.
-	*/
+	Protection: Public.*/
 	Point2D GetPosition();
 	/*Prototype: Point2D GetPosition();
 	Description: Returns the player's mPosition.
 	Arguments: None.
 	Precondition: None.
 	Postcondition: mPosition is returned.
-	Protection: Public.
-	*/
+	Protection: Public.*/
 };

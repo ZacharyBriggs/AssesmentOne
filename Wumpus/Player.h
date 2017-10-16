@@ -9,8 +9,7 @@ public:
 	Arguments: None.
 	Precondition: None.
 	Postcondition: A player with a default mPosition is created.
-	Protection: Public.
-	*/
+	Protection: Public.*/
 	~Player();
 	void Move(char direction);
 	/*Prototype: void Move(char direction);
@@ -19,22 +18,19 @@ public:
 	Arguments: A char representing which direction the player wants to go.
 	Precondition: None
 	Postcondition: The Player's mPosition is changed dependning on the input.
-	Protection: Public
-	*/
+	Protection: Public.*/
 	void SetPosition(Point2D* pos);
 	/*Prototype: void SetPosition(Point2D* pos);
 	Description: Changes the player's mPosition to the value passed in.
 	Arguments: A Point2D representing the new mPosition.
 	Precondition: None
 	Postcondition: Player's mPosition is changed to the value passed in.
-	Protection: Public
-	*/
+	Protection: Public.*/
 	Point2D GetPosition();
 	/*Prototype: Point2D GetPosition();
 	Description: Returns the Player's mPosition.
 	Arguments: None.
 	Precondition: None
 	Postcondition: Player's mPosition is returned.
-	Protection: Public
-	*/
+	Protection: Public.*/
 };
