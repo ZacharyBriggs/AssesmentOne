@@ -17,11 +17,11 @@ Dungeon::Dungeon(int rows, int cols)
 void Dungeon::GenRooms()
 {
 	int iter = 0;
-	for (int i = 0; i < mNumRows; i++)
+	for (int x = 0; x < mNumRows; x++)
 	{
-		for (int j = 0; j < mNumCols; j++)
+		for (int y = 0; y < mNumCols; y++)
 		{
-			mRooms[iter] = Point2D(i, j);
+			mRooms[iter] = Point2D(x, y);
 			iter++;
 		}
 	}
