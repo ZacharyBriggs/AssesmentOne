@@ -23,10 +23,10 @@ public:
 	~Game();
 	void TitleScreen();
 	/*Prototype: void TitleScreen();
-	Description: Outputs controls and context to the console.
+	Description: Outputs title and controls to the console.
 	Arguments: None.
 	Precondition: None.
-	Postcondition:
+	Postcondition: The title and controls are displayed in the console.
 	Protection: Public.
 	*/
 	void PlayerMove();

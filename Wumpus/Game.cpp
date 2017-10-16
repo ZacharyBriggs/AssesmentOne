@@ -40,12 +40,14 @@ bool Game::HazardCheck()
 	bool event = false;
 	if (mDungeon->CheckPlayerPosition(mPlayer) == false)
 	{
-		std::cout << "You stepped in the poison swamp! You feel the flesh melt from your bones until\nyou become a pile of mush. Your finals moments are spent wondering how you got\nthrough the poison swamp on your way here... Game Over...\n";
+		std::cout << "You stepped in the poison swamp! You feel the flesh melt from your bones until\nyou become a pile of mush.";
+		std::cout <<"Your finals moments are spent wondering how you got\nthrough the poison swamp on your way here... Game Over...\n";
 		return false;
 	}
 	if (mWumpus->CheckForPlayer(mPlayer) == true)
 	{
-		std::cout << "The Wumpus found you!\nGame Over...\n";
+		std::cout << "The Wumpus found you! Before you can react the hideious monster delivers a\nmighty punch to your chest at an unimaginable speed!\n";
+		std::cout << "The punch breaks your ribs and leaves you gasping for air. The Wumpus surveys\nhis freshly caught prey and drags you deeper into the swamp... Game Over...\n";
 		return false;
 	}
 	if (mTraps[0].CheckForPlayer(mPlayer) || mTraps[1].CheckForPlayer(mPlayer) || mTraps[2].CheckForPlayer(mPlayer))

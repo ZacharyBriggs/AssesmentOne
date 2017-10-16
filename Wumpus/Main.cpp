@@ -21,5 +21,4 @@ int main()
 		}
 	}
 	delete newGame;
-	system("pause");
 }
