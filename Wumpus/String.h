@@ -13,6 +13,7 @@ public:
 	Postcondition: A default String is created.
 	Protection: Public.
 	*/
+	~String();
 	String(char* name);
 	/*Prototype: Dungeon Dungeon();
 	Description: A String with a custom mString is created.

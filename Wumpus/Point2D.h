@@ -14,6 +14,7 @@ public:
 	Postcondition: A default Point2D is created.
 	Protection: Public.
 	*/
+	~Point2D();
 	Point2D(int x, int y);
 	/*Prototype: Point2D Point2d();
 	Description: A Point2D with custom mX and mY is created.

@@ -3,12 +3,23 @@
 int main()
 {
 	Game* newGame = new Game();
+	bool gameRunning = true;
 	newGame->TitleScreen();
-	while (newGame->HazardCheck())
+	while (gameRunning == true)
 	{
 		newGame->PlayerMove();
-		system("pause");
-		system("CLS");
+		if (newGame->HazardCheck() != true)
+		{
+			if (newGame->PlayAgain())
+			{
+				delete newGame;
+				newGame = new Game();
+				system("CLS");
+			}
+			else
+				gameRunning = false;
+		}
 	}
+	delete newGame;
 	system("pause");
 }

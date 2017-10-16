@@ -11,6 +11,7 @@ public:
 	Postcondition: A default Wumpus is created.
 	Protection: Public.
 	*/
+	~Wumpus();
 	void SetPosition(Point2D* pos);
 	/*Prototype: void SetPosition(Point2D* pos);
 	Description: Changes the Wumpus' mPosition to the value passed in.

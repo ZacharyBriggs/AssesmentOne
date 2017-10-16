@@ -4,6 +4,9 @@ Wumpus::Wumpus()
 {
 	mPosition = new Point2D(2, 1);
 }
+Wumpus::~Wumpus()
+{
+}
 void Wumpus::SetPosition(Point2D * pos)
 {
 	Entity::SetPosition(pos);

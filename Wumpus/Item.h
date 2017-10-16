@@ -11,6 +11,7 @@ public:
 	Postcondition: A default Item is created.
 	Protection: Public.
 	*/
+	~Item();
 	Item(Point2D *pos);
 	/*Prototype: Dungeon Dungeon();
 	Description: An Item with a custom mPosition is created.

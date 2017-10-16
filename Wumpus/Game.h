@@ -20,12 +20,13 @@ public:
 	Postcondition: A default Game is created.
 	Protection: Public.
 	*/
+	~Game();
 	void TitleScreen();
 	/*Prototype: void TitleScreen();
 	Description: Outputs controls and context to the console.
 	Arguments: None.
 	Precondition: None.
-	Postcondition: 
+	Postcondition:
 	Protection: Public.
 	*/
 	void PlayerMove();

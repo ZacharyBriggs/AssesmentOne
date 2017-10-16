@@ -15,6 +15,7 @@ public:
 	Postcondition: A dungeon with default values is created.
 	Protection: Public.
 	*/
+	~Dungeon();
 	Dungeon(int rows, int cols);
 	/*Prototype: Dungeon Dungeon(int rows, int cols);
 	Description: Initilizes a dungeon with default mRooms, but mNumCols and mNumrows

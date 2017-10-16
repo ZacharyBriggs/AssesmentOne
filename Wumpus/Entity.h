@@ -13,6 +13,7 @@ public:
 	Postcondition: An default Entity is created.
 	Protection: Public.
 	*/
+	~Entity();
 	void SetPosition(Point2D* pos);
 	/*Prototype: void SetPosition(Point2D* pos);
 	Description: Sets the player's position to a chosen position.

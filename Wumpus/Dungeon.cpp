@@ -5,6 +5,9 @@ Dungeon::Dungeon()
 	mNumCols = 5;
 	mNumRows = 5;
 }
+Dungeon::~Dungeon()
+{
+}
 Dungeon::Dungeon(int rows, int cols)
 {
 	mRooms = new Point2D[rows * cols];
@@ -25,7 +28,7 @@ void Dungeon::GenRooms()
 }
 bool Dungeon::CheckPlayerPosition(Player *player)
 {
-	for (int i = 0; i < mNumRows+1; i++)
+	for (int i = 0; i < mNumRows; i++)
 	{
 		for (int j = 0; j < mNumCols; j++)
 		{
