@@ -3,7 +3,7 @@
 class String
 {
 private:
-	char* mString;
+	const char* mString;
 public:
 	String();
 	/*Prototype: String String();
