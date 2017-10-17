@@ -45,4 +45,11 @@ public:
 	Precondition: None.
 	Postcondition: A new dungeon is generated.
 	Protection: Public.*/
+	bool DungeonBorderWarning(Player* player);
+	/*Prototype: void DungeonBorderWarning(Player* player);
+	Description: Warns the player when they are on the border of the map.
+	Arguments: A player.
+	Precondition: A player is on the border of the map.
+	Postcondition: Text is outputted telling the player they're on the border of the map.
+	Protection: Public.*/
 };

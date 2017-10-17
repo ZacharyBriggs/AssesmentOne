@@ -76,6 +76,8 @@ bool Game::HazardCheck()
 		std::cout << "You see a faint shimmering...\n";
 		event = true;
 	}
+	if (mDungeon->DungeonBorderWarning(mPlayer))
+		event = true;
 	if (event == false)
 	{
 		std::cout << "You're standing in an empty field.\n";
