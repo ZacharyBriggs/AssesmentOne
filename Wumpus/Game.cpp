@@ -21,8 +21,8 @@ void Game::TitleScreen()
 	system("pause");
 	system("CLS");
 	std::cout << "You take your first steps into the infamous Wumpus' swamp.\n";
-	std::cout <<"You've only heard of the fearsome beast in ancient tales told by your elders \nand now you stand firm in the beast's homeland.\n";
-	std::cout <<"Can you dodge the fearsome beast and his dastardly traps to find his\nillustrious gold? Find out... now...\n";
+	std::cout <<"You've only heard of the fearsome beast in ancient tales told by your elders \nand now you stand firm in the monster's homeland.\n";
+	std::cout <<"Can you dodge the awful creature and his dastardly traps to find his\nillustrious gold? Find out... now...\n";
 	system("pause");
 	system("CLS");
 }
