@@ -14,8 +14,14 @@ public:
 	Postcondition: A default Point2D is created.
 	Protection: Public.*/
 	~Point2D();
+	/*Prototype: Point2D ~Point2D();
+	Description: A Point2D is deleted.
+	Arguments: None.
+	Precondition: A Point2D is created.
+	Postcondition: The Point2D is deleted.
+	Protection: Public.*/
 	Point2D(int x, int y);
-	/*Prototype: Point2D Point2d();
+	/*Prototype: Point2D Point2d(int x, int y);
 	Description: A Point2D with custom mX and mY is created.
 	Arguments: None.
 	Precondition: None.
@@ -46,7 +52,7 @@ public:
 	temp Point2D. Neither variable is changed.
 	Visibility: Public.*/
 	Point2D operator*(int other);
-	/*Prototype: Point2D operator-(float other);
+	/*Prototype: Point2D operator*(float other);
 	Description: Both variables in a Point2D are multiplied by one variable.
 	Precondition: One Point2D variables.
 	Postcondition: Both Point2D variables are multiplied by other and

@@ -9,8 +9,7 @@ String::~String()
 }
 String::String(char* name)
 {
-	//mString = new char[255];
-
+	mString = name;
 }
 int String::GetLength()
 {

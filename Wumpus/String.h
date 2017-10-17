@@ -13,8 +13,14 @@ public:
 	Postcondition: A default String is created.
 	Protection: Public.*/
 	~String();
+	/*Prototype: String ~String();
+	Description: A String is deleted.
+	Arguments: None.
+	Precondition: A String is created.
+	Postcondition: The String is deleted.
+	Protection: Public.*/
 	String(char* name);
-	/*Prototype: Dungeon Dungeon();
+	/*Prototype: String(char* name);
 	Description: A String with a custom mString is created.
 	Arguments: None.
 	Precondition: None.

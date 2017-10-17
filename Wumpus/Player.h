@@ -11,6 +11,12 @@ public:
 	Postcondition: A player with a default mPosition is created.
 	Protection: Public.*/
 	~Player();
+	/*Prototype: Player ~Player();
+	Description: Deletes the Player.
+	Arguments: None.
+	Precondition: A Player is created.
+	Postcondition: The Player is deleted.
+	Protection: Public.*/
 	void Move(char direction);
 	/*Prototype: void Move(char direction);
 	Description: Takes user's input and changes the Player's mPosition depending on the

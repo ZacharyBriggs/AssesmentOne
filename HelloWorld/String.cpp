@@ -3,6 +3,9 @@ String::String()
 {
 	mString = new char[255];
 }
+String::~String()
+{
+}
 String::String(char* name)
 {
 	mString = name;

@@ -20,6 +20,12 @@ public:
 	Postcondition: A default Game is created.
 	Protection: Public.*/
 	~Game();
+	/*Prototype: Game ~Game();
+	Description: Deletes a Game and all the variables within it.
+	Arguments: None.
+	Precondition: A Game is created.
+	Postcondition: The Game is deleted.
+	Protection: Public.*/
 	void TitleScreen();
 	/*Prototype: void TitleScreen();
 	Description: Outputs title and controls to the console.

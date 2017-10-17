@@ -13,6 +13,12 @@ public:
 	Postcondition: An default Entity is created.
 	Protection: Public.*/
 	~Entity();
+	/*Prototype: Entity ~Entity();
+	Description: Deletes an Entity.
+	Arguments: None.
+	Precondition: An Entity is created.
+	Postcondition: The Entity is deleted.
+	Protection: Public.*/
 	void SetPosition(Point2D* pos);
 	/*Prototype: void SetPosition(Point2D* pos);
 	Description: Sets the player's mPosition to a a Point2D passed in.

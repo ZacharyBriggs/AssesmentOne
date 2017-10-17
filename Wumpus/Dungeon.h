@@ -15,6 +15,12 @@ public:
 	Postcondition: A dungeon with default values is created.
 	Protection: Public.*/
 	~Dungeon();
+	/*Prototype: Dungeon ~Dungeon();
+	Description: Deletes a Dungeon and all the variables within.
+	Arguments: None.
+	Precondition: A dungeon is created.
+	Postcondition: The dungeon is deleted.
+	Protection: Public.*/
 	Dungeon(int rows, int cols);
 	/*Prototype: Dungeon Dungeon(int rows, int cols);
 	Description: Initilizes a dungeon with default mRooms, but mNumCols and mNumrows
@@ -34,7 +40,7 @@ public:
 	Protection: Public.*/
 	void GenRooms();
 	/*Prototype: void GenRooms();
-	Description: Generates the rooms of a dungeon.
+	Description: Assigns values to every room in a dungeon.
 	Arguments: None.
 	Precondition: None.
 	Postcondition: A new dungeon is generated.

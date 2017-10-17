@@ -11,6 +11,12 @@ public:
 	Postcondition: A default Item is created.
 	Protection: Public.*/
 	~Item();
+	/*Prototype: Item ~Item();
+	Description: Deletes an Item.
+	Arguments: None.
+	Precondition: An Item is created.
+	Postcondition: The Item is deleted
+	Protection: Public.*/
 	Item(Point2D *pos);
 	/*Prototype: Dungeon Dungeon();
 	Description: An Item with a custom mPosition is created.
@@ -25,8 +31,8 @@ public:
 	Precondition: None
 	Postcondition: Item's mPosition is returned.
 	Protection: Public*/
-	bool CheckForPlayer(Entity* dude);
-	/*Prototype: bool CheckForPlayer(Entity* dude);
+	bool CheckForPlayer(Entity* entity);
+	/*Prototype: bool CheckForPlayer(Entity* entity);
 	Description: Checks to see an Entity is occupying the same position as the Item.
 	Arguments: An entity.
 	Precondition: None.
@@ -34,8 +40,8 @@ public:
 	if it isn't.
 	Protection: Public
 	*/
-	bool IsPlayerNearby(Entity* dude);
-	/*Prototype: bool IsPlayerNearby(Entity* dude);
+	bool IsPlayerNearby(Entity* entity);
+	/*Prototype: bool IsPlayerNearby(Entity* entity);
 	Description: Checks to see if an Entity is in an adjacent position.
 	Arguments: The player.
 	Precondition: None
