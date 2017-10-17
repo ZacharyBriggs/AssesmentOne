@@ -17,7 +17,7 @@ Game::~Game()
 void Game::TitleScreen()
 {
 	std::cout << "WUMPUS WORLD\n";
-	std::cout << "Input w to go north,a to go west,s to go south, or d to go east.\n";
+	std::cout << "To go up type w or north. To go down type s or south.\nTo go left type west or a. To go right type east or d.\n";
 	system("pause");
 	system("CLS");
 	std::cout << "You take your first steps into the infamous Wumpus' swamp.\n";
@@ -28,7 +28,7 @@ void Game::TitleScreen()
 }
 void Game::PlayerMove()
 {
-	char direction;
+	String direction;
 	std::cout << "Choose a direction.\n";
 	std::cin >> direction;
 	mPlayer->Move(direction);

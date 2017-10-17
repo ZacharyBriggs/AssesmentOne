@@ -6,28 +6,30 @@ Player::Player()
 Player::~Player()
 {
 }
-void Player::Move(char direction)
+void Player::Move(String direction)
 {
-	if (direction == 'w')
+	if (String("north") == direction.LowerString() || String("w") == direction.LowerString())
 	{
 		*mPosition += *new Point2D(-1, 0);
 		std::cout << "You head north.\n";
 	}
-	if (direction == 's')
+	else if (String("south") == direction.LowerString() || String("s") == direction.LowerString())
 	{
 		*mPosition += *new Point2D(1, 0);
 		std::cout << "You head south.\n";
 	}
-	if (direction == 'a')
+	else if (String("west") == direction.LowerString() || String("a") == direction.LowerString())
 	{
 		*mPosition += *new Point2D(0, -1);
 		std::cout << "You head west.\n";
 	}
-	if (direction == 'd')
+	else if (String("east") == direction.LowerString() || String("d") == direction.LowerString())
 	{
 		*mPosition += *new Point2D(0, 1);
 		std::cout << "You head east.\n";
 	}
+	else
+		std::cout << "Invalid command.\n";
 }
 void Player::SetPosition(Point2D * pos)
 {

@@ -1,5 +1,6 @@
 #pragma once
 #include "Entity.h"
+#include "String.h"
 class Player : public Entity
 {
 public:
@@ -17,7 +18,7 @@ public:
 	Precondition: A Player is created.
 	Postcondition: The Player is deleted.
 	Protection: Public.*/
-	void Move(char direction);
+	void Move(String direction);
 	/*Prototype: void Move(char direction);
 	Description: Takes user's input and changes the Player's mPosition depending on the
 	input.
