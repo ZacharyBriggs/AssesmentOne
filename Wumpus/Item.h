@@ -18,7 +18,7 @@ public:
 	Postcondition: The Item is deleted
 	Protection: Public.*/
 	Item(Point2D *pos);
-	/*Prototype: Dungeon Dungeon();
+	/*Prototype: Item(Point2D *pos);
 	Description: An Item with a custom mPosition is created.
 	Arguments: None.
 	Precondition: None.

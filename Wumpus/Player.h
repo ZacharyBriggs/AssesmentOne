@@ -19,10 +19,10 @@ public:
 	Postcondition: The Player is deleted.
 	Protection: Public.*/
 	void Move(String direction);
-	/*Prototype: void Move(char direction);
+	/*Prototype: void Move(String direction);
 	Description: Takes user's input and changes the Player's mPosition depending on the
 	input.
-	Arguments: A char representing which direction the player wants to go.
+	Arguments: A String representing which direction the player wants to go.
 	Precondition: None
 	Postcondition: The Player's mPosition is changed dependning on the input.
 	Protection: Public.*/

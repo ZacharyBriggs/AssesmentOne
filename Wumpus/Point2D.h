@@ -43,21 +43,6 @@ public:
 	Postcondition: The 2 Point2Ds are subtracted and returned as a new
 	temp Point2D. Neither variable is changed.
 	Visibility: Public.*/
-	Point2D operator*(const Point2D & other);
-	/*Prototype: Point2D operator*(const Point2D & other);
-	Description: Multiplays two Point2D variables and returns the value.
-	Arguments: Two Point2D variables.
-	Precondition: Two Point2D variables.
-	Postcondition: The 2 Point2Ds are multiplied and returned as a new
-	temp Point2D. Neither variable is changed.
-	Visibility: Public.*/
-	Point2D operator*(int other);
-	/*Prototype: Point2D operator*(float other);
-	Description: Both variables in a Point2D are multiplied by one variable.
-	Precondition: One Point2D variables.
-	Postcondition: Both Point2D variables are multiplied by other and
-	are returned as a temp value. Neither variable is changed.
-	Visibility: Public.*/
 	Point2D operator+=(const Point2D & other);
 	/*Prototype: Point2D operator+=(const Point2D & other);
 	Description: Adds two Point2D variables.
@@ -82,13 +67,6 @@ public:
 	Precondition: Two Point2Ds
 	Postcondition: True or false is returned depending on if the Point2Ds
 	are equal.
-	Visibility: Public.*/
-	friend std::ostream& operator<<(std::ostream&stream, const Point2D & a);
-	/*Prototype: friend std::ostream& operator<<(std::ostream&stream, const Point2D & a);
-	Description: Outputs mX and mY of a Point2D.
-	Arguments: A Point2D
-	Precondition: A Point2D
-	Postcondition: mX and mY of a Point2D are outputted to the console.
 	Visibility: Public.*/
 	int GetX();
 	/*Prototype: float GetX();
